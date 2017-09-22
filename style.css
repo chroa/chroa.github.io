@@ -1,0 +1,150 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+nav {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+}
+
+#nav-item {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+section {
+	min-height: 110vh;
+	width: 100%;
+	position: relative;
+	padding: 0px;
+}
+
+#intro {
+	position: absolute;
+	top: 35%;
+	transform: translateY(-50%);
+	left: 40%;
+}
+
+.even {
+	background-color: white;
+	color: black;
+}
+
+.odd {
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 2.2em;
+}
+
+#skills {
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#skills h1 {
+	margin: 0px;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.skill {
+	margin-bottom: 20px;
+}
+
+.skillbar {
+	border: 0.5px solid white;
+	height: 15px;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.skillbar.fill-70 {
+	width: calc(450px * 0.70);
+}
+
+.skillbar.fill-50 {
+	width: calc(450px * 0.5);
+}
+
+.skillbar.fill-45 {
+	width: calc(450px * 0.45);
+}
+
+.skillbar.fill-35 {
+	width: calc(450px * 0.35);
+}
+
+footer {
+	text-align: center;
+	padding-top: 100px;
+	color: gray;
+	padding-bottom: 20px;
+}
+
+.timeline {
+  	position: relative;
+  	padding-top: 200px;
+    min-height: 110vh;
+}
+
+.timeline:after {
+	content: '';
+	position: absolute;
+	border: 0.5px solid black;
+	width: 6px;
+  	background-color: black;
+  	top: 0;
+  	bottom: 0;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	border-bottom-left-radius: 100px;
+  	border-bottom-right-radius: 100px;
+}
+
+.container {
+    width: 30%;
+    min-height: 200px;
+}
+
+.left {
+	position: absolute;
+    right: 55%;
+    text-align: right;
+}
+
+.right {
+	position: absolute;
+    left: 55%;
+    text-align: left;
+}
+
+.container:after {
+	content: '';
+	position: absolute;
+  	width: 25px;
+    height: 25px;
+    left: 50%;
+  	background-color: white;
+  	border: 4px solid black;
+  	z-index: 1;
+  	border-radius: 50%;
+  	transform: translateX(-50%);
+}
+
+.timeline h1 {
+	margin: 0;
+}
+
+time {
+	display: block;
+}
