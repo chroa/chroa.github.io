@@ -5,55 +5,56 @@ body {
 
 nav {
 	text-align: right;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 	padding-right: 20px;
 }
 
-#nav-item {
+.nav-item {
 	display: inline-block;
 	margin-right: 20px;
 }
 
 section {
-	min-height: 110vh;
+	min-height: 120vh;
 	width: 100%;
 	position: relative;
 	padding: 0px;
 }
 
-#intro {
+.intro {
 	position: absolute;
 	top: 35%;
 	transform: translateY(-50%);
 	left: 40%;
+	margin-right: 40px;
 }
 
-.even {
+.white {
 	background-color: white;
 	color: black;
 }
 
-.odd {
-	background-color: black;
+.dark {
+	background-color: #181743;
 	color: white;
 }
 
 h1 {
 	font-weight: 400;
-	font-size: 2.2em;
+	font-size: 2em;
 }
 
-#skills {
+.skills {
 	position: absolute;
 	left: 20%;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-#skills h1 {
+.skill h1 {
 	margin: 0px;
-	font-size: 2em;
+	font-size: 1.9em;
 	font-weight: 300;
 }
 
@@ -94,7 +95,7 @@ footer {
 .timeline {
   	position: relative;
   	padding-top: 200px;
-    min-height: 110vh;
+    min-height: 120vh;
 }
 
 .timeline:after {
@@ -145,6 +146,204 @@ footer {
 	margin: 0;
 }
 
-time {
-	display: block;
+.nav-item.selected {
+	border-bottom: 3px solid gray;
+	padding-bottom: 5px;
+}
+
+.logo {
+	width: 30px;
+	height: auto;
+}
+
+@keyframes jump { 0% { bottom: 27vh; } 50% { bottom: 30vh; } 100% { bottom: 27vh; } }
+
+.arrow-down {
+	position: absolute;
+	animation: jump 5s infinite;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+emph {
+	color: gray;
+}
+
+.logos i {
+	margin-right: 5px;
+}
+
+.stars-container {
+
+}
+
+.stars-container .star {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	width: 7px;
+  	height: 7px;
+  	border-radius: 100%;
+}
+
+.star.nearmoon1 {
+	top: 15%;
+	left: 50%;
+}
+
+.star.nearmoon2 {
+	top: 45%;
+	left: 90%;
+}
+
+.star.nearmoon3 {
+	top: 30%;
+	left: 65%;
+}
+
+.star.topskills {
+	top: 20%;
+	left: 40%;
+}
+
+.star.topleftskills {
+	top: 25%;
+	left: 10%;
+}
+
+.star.rightskills {
+	top: 60%;
+	left: 85%;
+}
+
+.stars-container .star.twinkle div:nth-child(1) {
+  	position: absolute;
+  	height: 4px;
+  	border-radius: 100%;
+  	animation: twinkle-width 1s ease infinite;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.stars-container .star.twinkle div:nth-child(2) {
+	position: absolute;
+  	width: 4px;
+  	border-radius: 100%;
+  	animation: twinkle-height 1s ease infinite;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+
+@keyframes twinkle-height {
+  0% {
+    height: 20px;
+    top: -6px;
+    opacity: 0.8;
+  }
+  50% {
+    height: 4px;
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    height: 20px;
+    top: -6px;
+    opacity: 0.8;
+  }
+}
+
+@keyframes twinkle-width {
+  0% {
+    width: 20px;
+    left: -6px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 4px;
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 20px;
+    left: -6px;
+    opacity: 0.8;
+  }
+}
+
+.star.white div:nth-child(1){
+	background-color: white;
+}
+
+.star.white div:nth-child(2){
+	background-color: white;
+}
+
+.earth {
+	position: absolute;
+  	width: 500px;
+  	height: 500px;
+  	border-radius: 100%;
+  	background: linear-gradient(130deg, #6e81e3 55%, #8CD867 98%);
+  	position: absolute;
+  	left: -250px;
+  	bottom: -250px;
+}
+
+.cloud {
+	background-color: white;
+	border-radius: 100px;
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	height: 10px;
+	position: absolute;
+	width: 235px;
+	bottom: 10%;
+	left: 10%;
+}
+
+.cloud:after, .cloud:before {
+    background: white;
+	content: '';
+	position: absolute;
+}
+
+.cloud:after {
+	border-top-left-radius: 200px; /*size * 2*/
+	border-top-right-radius: 200px;
+	height: 50px; /*size / 2*/
+	left: 10px;
+	top: -45px;
+	width: 100px; /*size*/
+}
+
+.cloud:before {
+	border-top-left-radius: 260px;
+	border-top-right-radius: 260px;
+	width: 130px;
+	height: 65px;
+	left: 90px;
+	top: -65px;
+}
+
+.moon {
+	position: absolute;
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 100%;
+  	background: linear-gradient(65deg, #E8F7EE 15%, #6E81E3 98%);
+  	position: absolute;
+  	right: 10%;
+  	animation: planet-moving2 2s ease infinite;
+  	animation-delay: 0.5s;
+}
+
+@keyframes planet-moving2 {
+  0% {
+    top: 15%;
+  }
+  50% {
+    top: 16%;
+  }
+  100% {
+    top: 15%;
+  }
 }
