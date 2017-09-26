@@ -113,20 +113,25 @@ footer {
 }
 
 .container {
-    width: 30%;
     min-height: 200px;
+}
+
+.container div {
+	margin-bottom: 10px;
 }
 
 .left {
 	position: absolute;
     right: 55%;
     text-align: right;
+    width: 25%;
 }
 
 .right {
 	position: absolute;
     left: 55%;
     text-align: left;
+    width: 25%;
 }
 
 .container:after {
@@ -186,6 +191,16 @@ emph {
   	border-radius: 100%;
 }
 
+.star.small {
+	width: 3px;
+	height: 3px;
+	border-radius: 100%;
+}
+
+.star.fading {
+	opacity: 0.5;
+}
+
 .star.nearmoon1 {
 	top: 15%;
 	left: 50%;
@@ -201,6 +216,26 @@ emph {
 	left: 65%;
 }
 
+.star.nearmoon4 {
+	top: 35%;
+	left: 82%;
+}
+
+.star.nearmoon5 {
+	top: 10%;
+	left: 75%;
+}
+
+.star.nearmoon6 {
+	top: 20%;
+	left: 65%;
+}
+
+.star.nearmoon7 {
+	top: 31%;
+	left: 90%;
+}
+
 .star.topskills {
 	top: 20%;
 	left: 40%;
@@ -211,9 +246,24 @@ emph {
 	left: 10%;
 }
 
+.star.topleftskills2 {
+	top: 17%;
+	left: 22%;
+}
+
 .star.rightskills {
 	top: 60%;
 	left: 85%;
+}
+
+.star.bottomrightskills {
+	top: 79%;
+	left: 89%;
+}
+
+.star.bottom {
+	top: 72%;
+	left: 95%;
 }
 
 .stars-container .star.twinkle div:nth-child(1) {
@@ -289,39 +339,98 @@ emph {
   	bottom: -250px;
 }
 
-.cloud {
-	background-color: white;
-	border-radius: 100px;
-	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+.cloud-big {
+	position: absolute;
+	width: 200px;
+	bottom: 7%;
+	left: 11%;
 	height: 10px;
-	position: absolute;
-	width: 235px;
-	bottom: 10%;
-	left: 10%;
+	background-color: white;
+	border-top-left-radius: 400px; /*size * 2*/
+	border-top-right-radius: 400px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	box-shadow: -15px 10px 20px rgba(0,0,0,0.2);
 }
 
-.cloud:after, .cloud:before {
-    background: white;
-	content: '';
+.cloud-big div:nth-child(1) {
 	position: absolute;
+	border-top-left-radius: 110px;
+	border-top-right-radius: 110px;
+	width: 55px;
+	height: 30px;
+	left: 12px;
+	top: -22px;
+	background-color: white;
 }
 
-.cloud:after {
+.cloud-big div:nth-child(2) {
+	position: absolute;
+	border-top-left-radius: 140px;
+	border-top-right-radius: 140px;
+	width: 70px;
+	height: 40px;
+	left: 50px;
+	top: -40px;
+	background-color: white;
+}
+
+.cloud-big div:nth-child(3) {
+	position: absolute;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+	width: 60px;
+	height: 30px;
+	left: 100px;
+	top: -22px;
+	background-color: white;
+}
+
+.cloud-big div:nth-child(4) {
+	position: absolute;
+	border-top-left-radius: 130px;
+	border-top-right-radius: 130px;
+	width: 65px;
+	height: 20px;
+	left: 122px;
+	top: -10px;
+	background-color: white;
+}
+
+.cloud-small {
+	position: absolute;
+	width: 100px;
+	bottom: 17%;
+	left: 5%;
+	height: 10px;
+	background-color: white;
 	border-top-left-radius: 200px; /*size * 2*/
 	border-top-right-radius: 200px;
-	height: 50px; /*size / 2*/
-	left: 10px;
-	top: -45px;
-	width: 100px; /*size*/
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: -15px 10px 20px rgba(0,0,0,0.2);
 }
 
-.cloud:before {
-	border-top-left-radius: 260px;
-	border-top-right-radius: 260px;
-	width: 130px;
-	height: 65px;
-	left: 90px;
-	top: -65px;
+.cloud-small div:nth-child(1) {
+	position: absolute;
+	border-top-left-radius: 110px;
+	border-top-right-radius: 110px;
+	width: 55px;
+	height: 30px;
+	left: 12px;
+	top: -22px;
+	background-color: white;
+}
+
+.cloud-small div:nth-child(2) {
+	position: absolute;
+	border-top-left-radius: 130px;
+	border-top-right-radius: 130px;
+	width: 65px;
+	height: 20px;
+	left: 23px;
+	top: -12px;
+	background-color: white;
 }
 
 .moon {
@@ -332,11 +441,11 @@ emph {
   	background: linear-gradient(65deg, #E8F7EE 15%, #6E81E3 98%);
   	position: absolute;
   	right: 10%;
-  	animation: planet-moving2 2s ease infinite;
+  	animation: bounce 2s ease infinite;
   	animation-delay: 0.5s;
 }
 
-@keyframes planet-moving2 {
+@keyframes bounce {
   0% {
     top: 15%;
   }
