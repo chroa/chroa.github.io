@@ -2,98 +2,115 @@
 <html>
 <head>
 	<title>Joana Rocha</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
+	<div id="constelation"></div>
 	<main>
-		<section class="white">
+		<section>
 			<nav>
 				<div class="nav-item selected">Home</div>
 				<div class="nav-item">Blog</div>
 			</nav>
-			<div class="intro">
-				<h1>Hi there! I'm <emph>Joana Rocha</emph>.</h1>
-				<h1>An Outsystems developer and a full-stack enthusiast.</h1>
+			<div id="front-title">
+				<h1>Hi there!</h1>
+				<h2>I'm Joana Rocha,</h2>
+				An Outsystems developer and a full-stack enthusiast.
 				<div class="logos">
-					<i class="fa fa-linkedin-square fa-3x"></i>
-					<i class="fa fa-github fa-3x"></i>
+					<i class="fa fa-linkedin-square fa-2x"></i>
+					<i class="fa fa-github fa-2x"></i>
 				</div>
 			</div>
-			<div class="arrow-down">
-				<i class="fa fa-chevron-down fa-2x"></i>
-			</div>
 		</section>
-		<section class="dark">
+		<section>
+			<div id="stars-container"></div>
 			<div class="skills">
 				<div class="skill">
-					<h1>Outsystems</h1>
+					<h4>Outsystems</h4>
 					<div class="skillbar fill-70"></div>
 				</div>
 				<div class="skill">
-					<h1>HTML</h1>
+					<h4>HTML</h4>
 					<div class="skillbar fill-50"></div>
 				</div>
 				<div class="skill">
-					<h1>CSS</h1>
+					<h4>CSS</h4>
 					<div class="skillbar fill-45"></div>
 				</div>
 				<div class="skill">
-					<h1>Javascript</h1>
+					<h4>Javascript</h4>
 					<div class="skillbar fill-35"></div>
 				</div>
 			</div>
-			<div class="stars-container">
-				<div class="star twinkle nearmoon1 white">
-					<div></div><div></div>
-				</div>
-				<div class="star twinkle nearmoon2 white">
-					<div></div><div></div>
-				</div>
-				<div class="star twinkle topleftskills white">
-					<div></div><div></div>
-				</div>
-				<div class="star nearmoon3 white"></div>
-				<div class="star topskills white"></div>
-				<div class="star rightskills white"></div>
-				<div class="star fading bottomrightskills white"></div>
-				<div class="star fading nearmoon4 white"></div>
-				<div class="star fading nearmoon5 white"></div>
-				<div class="star small nearmoon6 white"></div>
-				<div class="star small topleftskills2 white"></div>
-				<div class="star small nearmoon7 white"></div>
-				<div class="star small bottom white"></div>
+			<div id="earth">
+				<div class="land land1"></div>
+    			<div class="land land2"></div>
+    			<div class="land land3"></div>
+    			<div class="land land4"></div>
+    			<div class="land land5"></div>
+    			<div class="land land6"></div>
 			</div>
-			<div class="earth"></div>
+			<div class="telescope">
+				<div class="telescope-baseleg1"></div>
+				<div class="telescope-baseleg2"></div>
+				<div class="telescope-baseleg3"></div>
+				<div class="telescope-lens2"></div>
+    			<div class="telescope-arm1"></div>
+    			<div class="telescope-arm2"></div>
+    			<div class="telescope-lens1"></div>
+    			<div class="star-twinkle telescope-glow"><div></div><div></div></div>
+    		</div>
+
 			<div class="cloud-small">
-				<div></div><div></div>
+				<div class="could-small-part1"></div>
+				<div class="cloud-small-part2"></div>
 			</div>
 			<div class="cloud-big">
-				<div></div><div></div><div></div><div></div>
+				<div class="cloud-big-part1"></div>
+				<div class="cloud-big-part2"></div>
+				<div class="cloud-big-part3"></div>
+				<div class="cloud-big-part4"></div>
 			</div>
-			<div class="moon"></div>
+			<div class="rocket">
+				<div class="rocket-flamebigger"></div>
+				<div class="rocket-flamesmaller"></div>
+				<div class="rocket-body"></div>
+				<div class="rocket-top1"></div>
+				<div class="rocket-top2"></div>
+				<div class="rocket-window"></div>
+				<div class="rocket-wingfront1"></div>
+				<div class="rocket-wingfront2"></div>
+				<div class="rocket-wingleft"></div>
+				<div class="rocket-wingright"></div>
+				<div class="rocket-bodyglow1"></div>
+				<div class="rocket-bodyglow2"></div>
+			</div>
 		</section>
-		<section class="white">
+		<section>
 			<div class="timeline">
   				<div class="container">
-  					<div class="right"><h1>Currently...</h1><div>... busy on several projects.</div><div>Meanwhile you can check my blog in order to check up on what I'm doing!</div><div>I'm also planning to do Inktober and Codevember, follow me on Twitter to see my daily entries!</div>
+  					<div class="right"><h4>Currently...</h4><div>... busy on several projects.</div><div>Meanwhile you can check my blog in order to check up on what I'm doing!</div><div>I'm also planning to do Inktober and Codevember, follow me on Twitter to see my daily entries!</div>
   					</div>
   				</div>
 				<div class="container">
-					<div class="left"><h1>July 2017</h1><div>Participated as an Outsystems developer in mostly web application projects.</div><div>Participated as an Outsystems developer in the NextStep 2017 Mobile app. NextStep is an annual event hosted by Outsystems, which contains several conferences targeted for anyone involved in the IT business.</div></div>
+					<div class="left"><h4>July 2O17</h4><div>Participated as an Outsystems developer in mostly web application projects.</div><div>Participated as an Outsystems developer in the NextStep 2017 Mobile app. NextStep is an annual event hosted by Outsystems, which contains several conferences targeted for anyone involved in the IT business.</div></div>
 				</div>
 				<div class="container">
-  					<div class="right"><h1>October 2016</h1><div>Started working as an Outsystem developer at Outfit, a company focusing mainly on the Outsystems technology to develop solutions for other companies.</div></div>
+  					<div class="right"><h4>October 2O16</h4><div>Started working as an Outsystem developer at Outfit, a company focusing mainly on the Outsystems technology to develop solutions for other companies.</div></div>
   				</div>
 				<div class="container">
-					<div class="left"><h1>May 2016</h1><div>Graduated as a MSc in Computer Science and Software Engineering at Instituto Superior T&eacute;cnico.</div></div>
+					<div class="left"><h4>May 2O16</h4><div>Graduated as a MSc in Computer Science and Software Engineering at Instituto Superior T&eacute;cnico.</div></div>
 				</div>
 			</div>
+			<div class="moon"></div>
 		</section>
 	</main>
 	<footer>
-		&copy; 2017 Joana Rocha. All Rights Reserved.
+		&copy; 2O17 Joana Rocha. All Rights Reserved.
 	</footer>
 </body>
 </html>
