@@ -40,7 +40,7 @@ function overlapsTitle(positionWidth, positionHeight, rect) {
 
 function getTitleCoordinates() {
 
-	var title = document.getElementById("front-title");
+	var title = document.getElementById("title");
 	var rect = title.getBoundingClientRect();
 
 	return rect;
@@ -69,20 +69,46 @@ function generateTwinklyStar() {
 	starsContainer.appendChild(twinklyStar);
 
 };
-  
-$(document).ready(function() {
-		
-	var windowWidth = $(document).width();
-	var windowHeight = $(document).height();
 
-	var titleRect = getTitleCoordinates();
+function removeAllAndReGenerateStars() {
 
-	for(var i = 0; i < 300; i++) {		
+    console.log("called resize");
+
+    var parentConstelation = document.getElementById("constelation");
+    var bodyStars = parentConstelation.childNodes;
+    for(var i = 0; i < bodyStars.length; i++) {
+        parentConstelation.removeChild(bodyStars[i]);
+    }
+
+    generateAllStars();
+
+};
+
+function generateAllStars() {
+    var windowWidth = $(document).width();
+    var windowHeight = $(document).height();
+
+    var titleRect = getTitleCoordinates();
+
+    for(var i = 0; i < 300; i++) {      
         generateStar(windowWidth, windowHeight, titleRect);
-	}
+    }
 
-	for(var i = 0; i < 7; i++) {
-		generateTwinklyStar();
-	}
+    for(var i = 0; i < 7; i++) {
+        generateTwinklyStar();
+    }
+};
+
+
+var doit;
+
+$(document).ready(function() {
+
+    $(window).resize(function() { 
+        clearTimeout(doit);
+        doit = setTimeout(removeAllAndReGenerateStars(), 500);
+    });
+
+    generateAllStars();
 
 });

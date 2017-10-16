@@ -3,8 +3,55 @@ body {
 	margin: 0;
 	background-color: #181743;
 	color: white;
+}
+
+main {
 	position: relative;
 }
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+	font-size: 4em;
+}
+
+h2 {
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+	font-size: 3em;
+}
+
+h4 {
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+	font-size: 2em;
+}
+
+footer {
+	text-align: center;
+	padding-top: 100px;
+	color: white;
+	padding-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*****************************/
+/** Stars in the background **/
+/*****************************/
 
 #constelation {
 	position: absolute;
@@ -14,7 +61,7 @@ body {
 
 .star {
 	background-color: white;
-	border-radius: 50%;
+	border-radius: 100%;
 	position: absolute;
 }
 
@@ -23,6 +70,10 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+/*******************/
+/** Twinkly stars **/
+/*******************/
 
 .star-twinkle {
 	position: absolute;
@@ -50,11 +101,6 @@ body {
   	left: 50%;
   	transform: translateX(-50%);
   	background-color: white;
-}
-
-.star-twinkle.telescope-glow {
-	left: 152px;
-	top: 10px;
 }
 
 @keyframes twinkle-height {
@@ -93,16 +139,39 @@ body {
   }
 }
 
+/******************************/
+/** Navigation bar and items **/
+/******************************/
+
 nav {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.nav-bar-right {
+	width: 50%;
 	text-align: right;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	padding-right: 20px;
+	display: inline-block;
+}
+
+.nav-bar-left {
+	width: 50%;
+	text-align: left;
+	display: inline-block;
 }
 
 .nav-item {
 	display: inline-block;
+}
+
+.nav-bar-left .nav-item {
 	margin-right: 20px;
+}
+
+.nav-bar-right .nav-item {
+	margin-left: 20px;
 }
 
 .nav-item.selected {
@@ -112,81 +181,136 @@ nav {
 	border-bottom-right-radius: 1px;
 }
 
-section {
-	min-height: 100vh;
-	width: 100%;
-	position: relative;
-	padding: 0px;
+/************************/
+/** Front page section **/
+/************************/
+
+#front-page {
+	white-space: nowrap;
 }
 
-#front-title {
+#title {
 	position: absolute;
 	top: 40%;
 	transform: translate(-50%, -35%);
 	left: 50%;
 }
 
-#front-title h1 {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 5em;
+#title .greetings {
+	position: relative;
+	left: -50px;
 }
 
-#front-title h2 {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 4em;
+.short-description {
+	margin-top: 20px;
 }
+
+/**********************/
+/** Front page logos **/
+/**********************/
+
+.logos {
+	margin-top: 20px;
+}
+
+.logos i {
+	margin-right: 10px;
+}
+
+/*******************/
+/** Page controls **/
+/*******************/
+
+.controls {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.controls i {
+	padding-right: 40px;
+	padding-bottom: 30px;
+	cursor: pointer;
+}
+
+@keyframes jump { 0% { bottom: 27vh; } 50% { bottom: 30vh; } 100% { bottom: 27vh; } }
+
+/********************/
+/** Skills section **/
+/********************/
 
 .skills {
 	position: absolute;
-	left: 35%;
-	top: 35%;
-	transform: translateY(-50%);
+	left: 50%;
+	top: 15%;
+	transform: translateX(-50%);
 	z-index: 1;
 }
 
-.skill h4{
-	margin: 0px;
-	font-size: 2em;
-	font-weight: 400;
+.skills .column-1 {
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+}
+
+.skills .column-2 {
+	display: inline-block;
+	padding: 20px;
+	position: relative;
 }
 
 .skill {
 	margin-bottom: 20px;
 }
 
-.skillbar {
+.skill:after {
+	content: '';
+	position: absolute;
 	border: 0.5px solid white;
-	height: 10px;
+	height: 5px;
+	left: 20px; /* cause of padding from column */
+	right: 20px; /* cause of padding from column */
+	background-color: white;
+	border-radius: 100px;
+	opacity: 0.4;
+}
+
+.skillbar {
+	position: absolute;
+	border: 0.5px solid white;
+	height: 5px;
+	left: 20px;
 	background-color: white;
 	border-radius: 100px;
 }
 
 .skillbar.fill-70 {
-	width: calc(450px * 0.70);
+	right: calc(30% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-50 {
-	width: calc(450px * 0.5);
+	right: calc(50% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-45 {
-	width: calc(450px * 0.45);
+	right: calc(55% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-35 {
-	width: calc(450px * 0.35);
+	right: calc(65% - 20px); /* cause of padding from column */
 }
 
-footer {
-	text-align: center;
-	padding-top: 100px;
-	color: white;
-	padding-bottom: 20px;
+.skillbar.fill-25 {
+	right: calc(75% - 20px); /* cause of padding from column */
 }
+
+.skillbar.fill-20 {
+	right: calc(80% - 20px); /* cause of padding from column */
+}
+
+/**********************/
+/** Timeline section **/
+/**********************/
 
 .timeline {
   	position: relative;
@@ -237,37 +361,13 @@ footer {
   	border: 4px solid white;
   	background-color: #181743;
   	z-index: 1;
-  	border-radius: 50%;
+  	border-radius: 100%;
   	transform: translateX(-50%);
 }
 
-.timeline .container div h4 {
-	font-weight: 500;
-	font-size: 2em;
-	margin: 0;
-}
-
-.logo {
-	width: 30px;
-	height: auto;
-}
-
-.logos {
-	margin-top: 10px;
-}
-
-.logos i {
-	margin-right: 5px;
-}
-
-@keyframes jump { 0% { bottom: 27vh; } 50% { bottom: 30vh; } 100% { bottom: 27vh; } }
-
-.arrow-down {
-	position: absolute;
-	animation: jump 5s infinite;
-	left: 50%;
-	transform: translateX(-50%);
-}
+/**************************/
+/** Earth planet drawing **/
+/**************************/
 
 #earth {
 	border-radius: 50%;
@@ -295,38 +395,42 @@ footer {
 	z-index: -1;
 }
 
-.land.land1 {
+.land.land-part-1 {
   top: 140px;
   left: -80px;
 }
 
-.land.land2 {
+.land.land-part-2 {
   top: 210px;
   left: -120px;
   border-top-right-radius: 0px;
 }
 
-.land.land3 {
+.land.land-part-3 {
   top: 260px;
   left: -160px;
 }
 
-.land.land4 {
+.land.land-part-4 {
   top: 90px;
   right: -130px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 70px;
 }
 
-.land.land5 {
+.land.land-part-5 {
   top: 160px;
   right: -90px;
 }
 
-.land.land6 {
+.land.land-part-6 {
   top: 320px;
   right: -190px;
 }
+
+/*************************************/
+/** Clouds, small and big, drawings **/
+/*************************************/
 
 .cloud-big {
 	position: absolute;
@@ -335,7 +439,7 @@ footer {
 	left: 11%;
 	height: 10px;
 	background-color: white;
-	border-top-left-radius: 400px; /*size * 2*/
+	border-top-left-radius: 400px; /* size x 2 */
 	border-top-right-radius: 400px;
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
@@ -344,7 +448,7 @@ footer {
 	transform: rotate(-8deg);
 }
 
-.cloud-big div:nth-child(1) {
+.cloud-big .cloud-big-part-1 {
 	position: absolute;
 	border-top-left-radius: 110px;
 	border-top-right-radius: 110px;
@@ -355,7 +459,7 @@ footer {
 	background-color: white;
 }
 
-.cloud-big div:nth-child(2) {
+.cloud-big .cloud-big-part-2 {
 	position: absolute;
 	border-top-left-radius: 140px;
 	border-top-right-radius: 140px;
@@ -366,7 +470,7 @@ footer {
 	background-color: white;
 }
 
-.cloud-big div:nth-child(3) {
+.cloud-big .cloud-big-part-3 {
 	position: absolute;
 	border-top-left-radius: 120px;
 	border-top-right-radius: 120px;
@@ -377,7 +481,7 @@ footer {
 	background-color: white;
 }
 
-.cloud-big div:nth-child(4) {
+.cloud-big .cloud-big-part-4 {
 	position: absolute;
 	border-top-left-radius: 130px;
 	border-top-right-radius: 130px;
@@ -395,7 +499,7 @@ footer {
 	left: 5%;
 	height: 10px;
 	background-color: white;
-	border-top-left-radius: 200px; /*size * 2*/
+	border-top-left-radius: 200px; /* size x 2 */
 	border-top-right-radius: 200px;
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
@@ -403,7 +507,7 @@ footer {
 	transform: rotate(-8deg);
 }
 
-.cloud-small div:nth-child(1) {
+.cloud-small .cloud-small-part-1 {
 	position: absolute;
 	border-top-left-radius: 110px;
 	border-top-right-radius: 110px;
@@ -414,7 +518,7 @@ footer {
 	background-color: white;
 }
 
-.cloud-small div:nth-child(2) {
+.cloud-small .cloud-small-part-2 {
 	position: absolute;
 	border-top-left-radius: 130px;
 	border-top-right-radius: 130px;
@@ -425,7 +529,11 @@ footer {
 	background-color: white;
 }
 
-.telescope {
+/***********************/
+/** Telescope drawing **/
+/***********************/
+
+#telescope {
 	position: absolute;
 	bottom: 58%;
 	left: 4%;
@@ -516,6 +624,11 @@ footer {
 	left: 72px;
 	border-radius: 3px;
 	transform: rotate(20deg);
+}
+
+.star-twinkle.telescope-glow {
+	left: 152px;
+	top: 10px;
 }
 
 .moon {
