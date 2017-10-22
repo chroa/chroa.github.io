@@ -2,132 +2,109 @@
 <html>
 <head>
 	<title>Joana Rocha</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
-	<main id="developer-about">
+	<main id="fullpage">
 		<div id="constelation"></div>
-		<section id="front-page">
+		<section id="front-page" class="section">
 			<nav>
 				<div class="nav-bar-left">
-					<div class="nav-item"><a href="art/artist.html">Artist</a></div>
-					<div class="nav-item selected">Developer</div>
 				</div>
 				<div class="nav-bar-right">
 					<div class="nav-item selected">About</div>
-					<div class="nav-item"><a href="work/projects.html">Projects</a></div>
-					<div class="nav-item"><a href="blog/notes.html">Notes</a></div>
 				</div>
 			</nav>
 			<div id="title">
-				<h2 class="greetings">Hi there!</h2>
+				<h2 class="greetings">Hey there!</h2>
 				<h1>I'm Joana Rocha,</h1>
 				<div class="short-description">An Outsystems developer and a full-stack enthusiast.</div>
-				<div class="logos">
-					<i class="fa fa-file-text fa-2x"></i>
-					<i class="fa fa-linkedin-square fa-2x"></i>
-					<i class="fa fa-github fa-2x"></i>
-					<i class="fa fa-twitter fa-2x"></i>
-					<i class="fa fa-envelope fa-2x"></i>
-				</div>
 			</div>
-			<div class="controls">
-				<div><a id="control-up" href=""><i class="fa fa-angle-up fa-2x"></i></a></div>
-				<div><a id="control-down" href=""><i class="fa fa-angle-down fa-2x"></i></a></div>
+			<div class="arrow-down">
+				<i class="fa fa-angle-down fa-3x"></i>
 			</div>
 		</section>
-		<section id="skills-page">
+		<section id="skills-page" class="section">
+			<div class="slide">
+				<div class="skill">
+					<h4>Outsystems</h4>
+					<div class="skillbar fill-70"></div>
+				</div>
+				<div class="skill">
+					<h4>HTML/HTML5</h4>
+					<div class="skillbar fill-50"></div>
+				</div>
+				<div class="skill">
+					<h4>CSS/CSS3</h4>
+					<div class="skillbar fill-45"></div>
+				</div>
+				<div class="skill">
+					<h4>Javascript</h4>
+					<div class="skillbar fill-35"></div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="skill">
+					<h4>SQL/Oracle</h4>
+					<div class="skillbar fill-45"></div>
+				</div>
+				<div class="skill">
+					<h4>Cordova</h4>
+					<div class="skillbar fill-50"></div>
+				</div>
+				<div class="skill">
+					<h4>Java</h4>
+					<div class="skillbar fill-70"></div>
+				</div>
+				<div class="skill">
+					<h4>Objective-C</h4>
+					<div class="skillbar fill-25"></div>
+				</div>
+			</div>
 			<div id="stars-container"></div>
-			<div class="skills">
-				<div class="column-1">
-					<div class="skill">
-						<h4>Outsystems</h4>
-						<div class="skillbar fill-70"></div>
-					</div>
-					<div class="skill">
-						<h4>HTML/HTML5</h4>
-						<div class="skillbar fill-50"></div>
-					</div>
-					<div class="skill">
-						<h4>CSS/CSS3</h4>
-						<div class="skillbar fill-45"></div>
-					</div>
-					<div class="skill">
-						<h4>Javascript</h4>
-						<div class="skillbar fill-35"></div>
-					</div>
+			<div class="earth-corner">
+				<div id="earth">
+					<div class="land land-part-1"></div>
+    				<div class="land land-part-2"></div>
+    				<div class="land land-part-3"></div>
+    				<div class="land land-part-4"></div>
+    				<div class="land land-part-5"></div>
+    				<div class="land land-part-6"></div>
 				</div>
-				<div class="column-2">
-					<div class="skill">
-						<h4>SQL/Oracle</h4>
-						<div class="skillbar fill-45"></div>
-					</div>
-					<div class="skill">
-						<h4>Cordova/Ionic</h4>
-						<div class="skillbar fill-50"></div>
-					</div>
-					<div class="skill">
-						<h4>Java</h4>
-						<div class="skillbar fill-70"></div>
-					</div>
-					<div class="skill">
-						<h4>Objective-C</h4>
-						<div class="skillbar fill-25"></div>
-					</div>
+				<div id="telescope">
+					<div class="telescope-baseleg-middle"></div>
+					<div class="telescope-baseleg-right"></div>
+					<div class="telescope-baseleg-left"></div>
+					<div class="telescope-lens"></div>
+    				<div class="telescope-arm-small"></div>
+    				<div class="telescope-arm-big"></div>
+    				<div class="telescope-lens-edge"></div>
+    				<div class="star-twinkle telescope-glow"><div></div><div></div></div>
+    			</div>
+				<div class="cloud-small">
+					<div class="cloud-small-part-1"></div>
+					<div class="cloud-small-part-2"></div>
+				</div>
+				<div class="cloud-big">
+					<div class="cloud-big-part-1"></div>
+					<div class="cloud-big-part-2"></div>
+					<div class="cloud-big-part-3"></div>
+					<div class="cloud-big-part-4"></div>
 				</div>
 			</div>
-			<div id="earth">
-				<div class="land land-part-1"></div>
-    			<div class="land land-part-2"></div>
-    			<div class="land land-part-3"></div>
-    			<div class="land land-part-4"></div>
-    			<div class="land land-part-5"></div>
-    			<div class="land land-part-6"></div>
-			</div>
-			<div id="telescope">
-				<div class="telescope-baseleg1"></div>
-				<div class="telescope-baseleg2"></div>
-				<div class="telescope-baseleg3"></div>
-				<div class="telescope-lens2"></div>
-    			<div class="telescope-arm1"></div>
-    			<div class="telescope-arm2"></div>
-    			<div class="telescope-lens1"></div>
-    			<div class="star-twinkle telescope-glow"><div></div><div></div></div>
-    		</div>
-			<div class="cloud-small">
-				<div class="cloud-small-part-1"></div>
-				<div class="cloud-small-part-2"></div>
-			</div>
-			<div class="cloud-big">
-				<div class="cloud-big-part-1"></div>
-				<div class="cloud-big-part-2"></div>
-				<div class="cloud-big-part-3"></div>
-				<div class="cloud-big-part-4"></div>
-			</div>
-			<div class="rocket">
-				<div class="rocket-flamebigger"></div>
-				<div class="rocket-flamesmaller"></div>
-				<div class="rocket-body"></div>
-				<div class="rocket-top1"></div>
-				<div class="rocket-top2"></div>
-				<div class="rocket-window"></div>
-				<div class="rocket-wingfront1"></div>
-				<div class="rocket-wingfront2"></div>
-				<div class="rocket-wingleft"></div>
-				<div class="rocket-wingright"></div>
-				<div class="rocket-bodyglow1"></div>
-				<div class="rocket-bodyglow2"></div>
-			</div>
+			<div class="moon"></div>
 		</section>
-		<section>
-			<a id="timeline-section"></a>
+		<section id="timeline-page" class="section">
 			<div class="timeline">
   				<div class="container">
-  					<div class="right"><h4>Currently...</h4><div>... busy on several projects.</div><div>Meanwhile you can check my blog in order to check up on what I'm doing!</div>
+  					<div class="right"><h4>Currently...</h4><div>Besides working on several Outsystems projects, I'm doing my best in order to improve my front-end skills!</div>
   					</div>
   				</div>
 				<div class="container">
@@ -140,11 +117,22 @@
 					<div class="left"><h4>May 2O16</h4><div>Graduated as a MSc in Computer Science and Software Engineering at Instituto Superior T&eacute;cnico.</div></div>
 				</div>
 			</div>
-			<div class="moon"></div>
+			<div class="rocket">
+				<div class="rocket-flame-big"></div>
+				<div class="rocket-flame-small"></div>
+				<div class="rocket-body"></div>
+				<div class="rocket-top-part-left"></div>
+				<div class="rocket-top-part-right"></div>
+				<div class="rocket-window"></div>
+				<div class="rocket-backwing-middle-left"></div>
+				<div class="rocket-backwing-middle-right"></div>
+				<div class="rocket-backwing-left"></div>
+				<div class="rocket-backwing-right"></div>
+			</div>
 		</section>
+		<footer class="section fp-auto-height">
+			&copy; 2O17 Joana Rocha
+		</footer>
 	</main>
-	<footer>
-		&copy; 2O17 Joana Rocha
-	</footer>
 </body>
 </html>

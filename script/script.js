@@ -57,30 +57,14 @@ function generateTwinklyStar() {
     twinklyStar.appendChild(twinkleDiv1);
     twinklyStar.appendChild(twinkleDiv2);
 
-    var range = 200;
+    var positionWidth = Math.floor(Math.random()*(100-4));
+    var positionHeight = Math.floor(Math.random()*(100-4));
 
-    var positionWidth = Math.floor(Math.random()*(range+200))+20;
-    var positionHeight = Math.floor(Math.random()*(range+100));
-
-    twinklyStar.style.right = positionWidth + "px";
-    twinklyStar.style.top = positionHeight + "px";
+    twinklyStar.style.right = positionWidth + "%";
+    twinklyStar.style.top = positionHeight + "%";
 
     var starsContainer = document.getElementById("stars-container");
 	starsContainer.appendChild(twinklyStar);
-
-};
-
-function removeAllAndReGenerateStars() {
-
-    console.log("called resize");
-
-    var parentConstelation = document.getElementById("constelation");
-    var bodyStars = parentConstelation.childNodes;
-    for(var i = 0; i < bodyStars.length; i++) {
-        parentConstelation.removeChild(bodyStars[i]);
-    }
-
-    generateAllStars();
 
 };
 
@@ -99,14 +83,12 @@ function generateAllStars() {
     }
 };
 
-
-var doit;
-
 $(document).ready(function() {
 
-    $(window).resize(function() { 
-        clearTimeout(doit);
-        doit = setTimeout(removeAllAndReGenerateStars(), 500);
+    $("#fullpage").fullpage({
+        scrollOverflow: true,
+        loopHorizontal: false,
+        slidesNavigation: true
     });
 
     generateAllStars();
