@@ -230,12 +230,30 @@ nav {
 /** Skills section **/
 /********************/
 
+.skills {
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.skills .column-1 {
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	width: 200px;
+}
+
+.skills .column-2 {
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	width: 200px;
+}
+
 .skill {
 	margin-bottom: 20px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 300px;
 }
 
 .skill:after {
@@ -243,8 +261,8 @@ nav {
 	position: absolute;
 	border: 0.5px solid white;
 	height: 5px;
-	left: 0;
-	right: 0;
+	left: 20px; /* cause of padding from column */
+	right: 20px; /* cause of padding from column */
 	background-color: white;
 	border-radius: 100px;
 	opacity: 0.4;
@@ -260,33 +278,27 @@ nav {
 }
 
 .skillbar.fill-70 {
-	right: 30%;
-	left: 0;
+	right: calc(30% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-50 {
-	right: 50%;
-	left: 0;
+	right: calc(50% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-45 {
-	right: 55%;
-	left: 0;
+	right: calc(55% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-35 {
-	right: 65%;
-	left: 0;
+	right: calc(65% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-25 {
-	right: 75%;
-	left: 0;
+	right: calc(75% - 20px); /* cause of padding from column */
 }
 
 .skillbar.fill-20 {
-	right: 80%;
-	left: 0;
+	right: calc(80% - 20px); /* cause of padding from column */
 }
 
 /**********************/
@@ -809,40 +821,4 @@ nav {
 	border-bottom:31px solid rgb(255, 165, 0);
 	border-radius: 70%;
 	transform: rotate(262deg);
-}
-
-/*****************/
-/** Fullpage.js **/
-/*****************/
-
-.fp-controlArrow.fp-prev {
-    border-style: none;
-}
-
-.fp-controlArrow.fp-prev:after {
-	font-family: FontAwesome;
-	content: '\f104';
-    border-style: none;
-    color: white;
-    position: absolute;
-    font-size: 2.5em;
-    left: 15px;
-}
-
-.fp-controlArrow.fp-next {
-    border-style: none;
-}
-
-.fp-controlArrow.fp-next:after {
-	font-family: FontAwesome;
-	content: '\f105';
-    border-style: none;
-    color: white;
-    position: absolute;
-    font-size: 2.5em;
-    right: 15px;
-}
-
-.fp-slidesNav ul li a span {
-	background: white;
 }

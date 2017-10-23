@@ -85,12 +85,6 @@ function generateAllStars() {
 
 $(document).ready(function() {
 
-    $("#fullpage").fullpage({
-        scrollOverflow: true,
-        loopHorizontal: false,
-        slidesNavigation: true
-    });
-
     generateAllStars();
 
 });
