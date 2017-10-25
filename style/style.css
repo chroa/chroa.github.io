@@ -193,6 +193,7 @@ nav {
 /*******************/
 
 #front-section {
+	width: 100%;
 }
 
 #title {
@@ -201,6 +202,9 @@ nav {
 	transform: translate(-50%, -40%);
 	left: 50%;
 	display: flex;
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 #title .greetings {
@@ -224,7 +228,6 @@ nav {
 
 .arrow-down {
 	position: absolute;
-	padding-bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 	animation: jump 2s ease infinite;
