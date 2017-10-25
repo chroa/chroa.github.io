@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Joana Rocha</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
@@ -11,12 +14,13 @@
 <body>
 	<main>
 		<div id="constelation"></div>
-		<section id="front-page">
+		<section id="front-section">
 			<nav>
 				<div class="nav-bar-left">
 				</div>
 				<div class="nav-bar-right">
 					<div class="nav-item selected">About</div>
+					<div class="nav-item">Portfolio</div>
 				</div>
 			</nav>
 			<div id="title">
@@ -24,8 +28,12 @@
 				<h1>I'm Joana Rocha,</h1>
 				<div class="short-description">An Outsystems developer and a full-stack enthusiast.</div>
 			</div>
+			<div class="controls">
+				<div><i class="fa fa-angle-up fa-2x" aria-hidden="true" onclick="slideUp(this)"></i></div>
+				<div><i class="fa fa-angle-down fa-2x" aria-hidden="true" onclick="slideDown(this)"></i></div>
+			</div>
 		</section>
-		<section id="skills-page">
+		<section id="skills-section">
 			<div class="skills">
 				<div class="column-1">
 					<div class="skill">
@@ -97,7 +105,7 @@
 			</div>
 			<div class="moon"></div>
 		</section>
-		<section id="timeline-page">
+		<section id="timeline-section">
 			<div class="timeline">
   				<div class="container">
   					<div class="right"><h4>Currently...</h4><div>...busy on several projects.</div><div>Also doing my best in order to improve my front-end skills!</div>
