@@ -154,18 +154,19 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
+	display: flex;
 }
 
 .nav-bar-right {
-	width: 50%;
 	text-align: right;
-	display: inline-block;
+	order: 2;
+	flex-grow: 1;
 }
 
 .nav-bar-left {
-	width: 50%;
 	text-align: left;
-	display: inline-block;
+	order: 1;
+	flex-grow: 1;
 }
 
 .nav-item {
@@ -187,28 +188,27 @@ nav {
 	border-bottom-right-radius: 1px;
 }
 
-/************************/
-/** Front page section **/
-/************************/
+/*******************/
+/** Front section **/
+/*******************/
 
-#front-page {
+#front-section {
 	white-space: nowrap;
 }
 
 #title {
 	position: absolute;
 	top: 40%;
-	transform: translate(-50%, -35%);
+	transform: translate(-50%, -40%);
 	left: 50%;
 }
 
 #title .greetings {
-	position: relative;
-	left: -50px;
 }
 
 .short-description {
 	margin-top: 20px;
+	font-size: 1.5em;
 }
 
 /*******************/
@@ -821,4 +821,14 @@ nav {
 	border-bottom:31px solid rgb(255, 165, 0);
 	border-radius: 70%;
 	transform: rotate(262deg);
+}
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
 }
