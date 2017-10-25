@@ -835,10 +835,10 @@ nav {
 
 @viewport{
     zoom: 1.0;
-    width: extend-to-zoom;
+    width: device-width;
 }
 
 @-ms-viewport{
-    width: extend-to-zoom;
+    width: device-width;
     zoom: 1.0;
 }
