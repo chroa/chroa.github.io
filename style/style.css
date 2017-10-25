@@ -208,6 +208,7 @@ nav {
 
 .short-description {
 	margin-top: 20px;
+	white-space: normal;
 	font-size: 1.5em;
 }
 
