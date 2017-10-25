@@ -20,21 +20,21 @@ h1 {
 	margin: 0;
 	width: 100%;
 	font-weight: 400;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 h2 {
 	margin: 0;
 	width: 100%;
 	font-weight: 400;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 h4 {
 	margin: 0;
 	width: 100%;
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 footer {
@@ -193,7 +193,6 @@ nav {
 /*******************/
 
 #front-section {
-	white-space: nowrap;
 }
 
 #title {
@@ -201,15 +200,22 @@ nav {
 	top: 40%;
 	transform: translate(-50%, -40%);
 	left: 50%;
+	display: flex;
 }
 
 #title .greetings {
+	order: 2;
+	flex-grow: 1;
 }
 
 .short-description {
 	margin-top: 20px;
-	white-space: normal;
 	font-size: 1.5em;
+}
+
+#title .astronaut {
+	order: 1;
+	flex-grow: 1;
 }
 
 /*******************/
