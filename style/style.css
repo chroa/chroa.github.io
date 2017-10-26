@@ -2,7 +2,7 @@ body {
 	font-family: 'Dosis', sans-serif;
 	margin: 0;
 	background-color: #181743;
-	color: white;
+	color: whitesmoke;
 }
 
 main {
@@ -30,6 +30,13 @@ h2 {
 	font-size: 2.5em;
 }
 
+h3 {
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+	font-size: 2em;
+}
+
 h4 {
 	margin: 0;
 	width: 100%;
@@ -40,13 +47,13 @@ h4 {
 footer {
 	text-align: center;
 	padding-top: 100px;
-	color: white;
+	color: whitesmoke;
 	padding-bottom: 20px;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: whitesmoke;
 }
 
 /*****************************/
@@ -60,7 +67,7 @@ a {
 }
 
 .star {
-	background-color: white;
+	background-color: whitesmoke;
 	border-radius: 100%;
 	position: absolute;
 }
@@ -82,7 +89,7 @@ a {
   	width: 6px;
   	height: 6px;
   	border-radius: 100%;
-  	background-color: white;
+  	background-color: whitesmoke;
 }
 
 .star-twinkle div:nth-child(1) {
@@ -92,7 +99,7 @@ a {
   	animation: twinkle-width 1s ease infinite;
   	top: 50%;
   	transform: translateY(-50%);
-  	background-color: white;
+  	background-color: whitesmoke;
 }
 
 .star-twinkle div:nth-child(2) {
@@ -102,7 +109,7 @@ a {
   	animation: twinkle-height 1s ease infinite;
   	left: 50%;
   	transform: translateX(-50%);
-  	background-color: white;
+  	background-color: whitesmoke;
 }
 
 @keyframes twinkle-height {
@@ -146,43 +153,23 @@ a {
 /******************************/
 
 nav {
-	padding-top: 30px;
-	padding-bottom: 20px;
+	padding-top: 40px;
 	padding-left: 40px;
 	padding-right: 40px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-	display: flex;
-}
-
-.nav-bar-right {
 	text-align: right;
-	order: 2;
-	flex-grow: 1;
-}
-
-.nav-bar-left {
-	text-align: left;
-	order: 1;
-	flex-grow: 1;
 }
 
 .nav-item {
 	display: inline-block;
-}
-
-.nav-bar-left .nav-item {
-	margin-right: 20px;
-}
-
-.nav-bar-right .nav-item {
 	margin-left: 20px;
 }
 
 .nav-item.selected {
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid whitesmoke;
 	padding-bottom: 5px;
 	border-bottom-left-radius: 1px;
 	border-bottom-right-radius: 1px;
@@ -201,15 +188,9 @@ nav {
 	top: 40%;
 	transform: translate(-50%, -40%);
 	left: 50%;
-	display: flex;
-	width: 100%;
-	padding-left: 40px;
-	padding-right: 40px;
 }
 
 #title .greetings {
-	order: 2;
-	flex-grow: 1;
 }
 
 .short-description {
@@ -217,21 +198,13 @@ nav {
 	font-size: 1.5em;
 }
 
-#title .astronaut {
-	order: 1;
-	flex-grow: 1;
-}
-
-/*******************/
-/** Page controls **/
-/*******************/
-
 .arrow-down {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	animation: jump 2s ease infinite;
   	animation-delay: 0.5s;
+  	padding-bottom: 40px;
 }
 
 @keyframes jump { 0% { bottom: 1%; } 50% { bottom: 2%; } 100% { bottom: 1%; } }
@@ -240,75 +213,89 @@ nav {
 /** Skills section **/
 /********************/
 
+#skills-section {
+	padding-top: 60px;
+}
+
 .skills {
 	position: absolute;
-	left: 50%;
-	top: 15%;
-	transform: translateX(-50%);
+	left: 30%;
+	top: 25%;
+	right: 30%;
 	z-index: 1;
+	display: flex;
 }
 
-.skills .column-1 {
-	display: inline-block;
-	padding: 20px;
+.skills .skills-part-1 {
+	order: 1;
+	flex-grow: 1;
+	width: 100%;
 	position: relative;
-	width: 200px;
+	margin-right: 20px;
 }
 
-.skills .column-2 {
-	display: inline-block;
-	padding: 20px;
+.skills .skills-part-2 {
+	order: 2;
+	flex-grow: 1;
+	width: 100%;
 	position: relative;
-	width: 200px;
+	margin-left: 20px;
 }
 
 .skill {
 	margin-bottom: 20px;
 }
 
+.skill div:nth-child(1) {
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+	font-size: 2em;
+}
+
 .skill:after {
 	content: '';
 	position: absolute;
-	border: 0.5px solid white;
+	border: 0.5px solid whitesmoke;
 	height: 5px;
-	left: 20px; /* cause of padding from column */
-	right: 20px; /* cause of padding from column */
-	background-color: white;
+	left: 0;
+	right: 0;
+	background-color: whitesmoke;
 	border-radius: 100px;
 	opacity: 0.4;
 }
 
 .skillbar {
 	position: absolute;
-	border: 0.5px solid white;
+	border: 0.5px solid whitesmoke;
 	height: 5px;
-	left: 20px;
-	background-color: white;
+	left: 0;
+	background-color: whitesmoke;
 	border-radius: 100px;
 }
 
 .skillbar.fill-70 {
-	right: calc(30% - 20px); /* cause of padding from column */
+	right: 30%;
 }
 
 .skillbar.fill-50 {
-	right: calc(50% - 20px); /* cause of padding from column */
+	right: 50%;
 }
 
 .skillbar.fill-45 {
-	right: calc(55% - 20px); /* cause of padding from column */
+	right: 55%;
 }
 
 .skillbar.fill-35 {
-	right: calc(65% - 20px); /* cause of padding from column */
+	right: 65%;
 }
 
 .skillbar.fill-25 {
-	right: calc(75% - 20px); /* cause of padding from column */
+	right: 75%;
 }
 
 .skillbar.fill-20 {
-	right: calc(80% - 20px); /* cause of padding from column */
+	right: 80%;
 }
 
 /**********************/
@@ -324,7 +311,7 @@ nav {
 	content: '';
 	position: absolute;
 	width: 6px;
-  	background-color: white;
+  	background-color: whitesmoke;
   	top: 300px;
   	bottom: 0;
   	left: 50%;
@@ -361,7 +348,7 @@ nav {
   	width: 25px;
     height: 25px;
     left: 50%;
-  	border: 4px solid white;
+  	border: 4px solid whitesmoke;
   	background-color: #181743;
   	z-index: 1;
   	border-radius: 100%;
@@ -450,7 +437,7 @@ nav {
 	right: 0;
 	top: 56%;
 	height: 10px;
-	background-color: white;
+	background-color: whitesmoke;
 	border-top-left-radius: 400px; /* size x 2 */
 	border-top-right-radius: 400px;
 	border-bottom-left-radius: 100px;
@@ -468,7 +455,7 @@ nav {
 	height: 30px;
 	left: 12px;
 	top: -21px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .cloud-big .cloud-big-part-2 {
@@ -479,7 +466,7 @@ nav {
 	height: 40px;
 	left: 50px;
 	top: -39px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .cloud-big .cloud-big-part-3 {
@@ -490,7 +477,7 @@ nav {
 	height: 30px;
 	left: 100px;
 	top: -21px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .cloud-big .cloud-big-part-4 {
@@ -501,7 +488,7 @@ nav {
 	height: 20px;
 	left: 122px;
 	top: -10px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .cloud-small {
@@ -510,7 +497,7 @@ nav {
 	top: 45%;
 	left: 30%;
 	height: 10px;
-	background-color: white;
+	background-color: whitesmoke;
 	border-top-left-radius: 200px; /* size x 2 */
 	border-top-right-radius: 200px;
 	border-bottom-left-radius: 50px;
@@ -527,7 +514,7 @@ nav {
 	height: 30px;
 	left: 12px;
 	top: -22px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .cloud-small .cloud-small-part-2 {
@@ -538,7 +525,7 @@ nav {
 	height: 20px;
 	left: 23px;
 	top: -12px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 /***********************/
@@ -600,7 +587,7 @@ nav {
 	width: 5px;
 	height: 5px;
 	border-radius: 100%;
-	background-color: white;
+	background-color: whitesmoke;
 	opacity: 0.2;
 	left: 39px;
 	top: 10px;
@@ -669,8 +656,8 @@ nav {
 
 .rocket {
     position: absolute;
-    left: 35%;
-    top: 7%;
+    right: -20%;
+    bottom: 0;
     transform: rotate(115deg);
 }
 
@@ -833,6 +820,8 @@ nav {
 	transform: rotate(262deg);
 }
 
+/** Mobile Friendly **/
+
 @viewport{
     zoom: 1.0;
     width: device-width;
@@ -842,3 +831,4 @@ nav {
     width: device-width;
     zoom: 1.0;
 }
+
