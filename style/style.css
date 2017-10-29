@@ -823,7 +823,7 @@ nav {
 	transform: rotate(262deg);
 }
 
-/** Mobile Friendly **/
+/** Mobile Friendly Stuff **/
 
 @viewport{
     zoom: 1.0;
@@ -908,7 +908,12 @@ nav {
 	}
 
 	.rocket {
-    	right: 20%;
+    	right: 30%;
     	bottom: -5%;
+    	transform: ;
+	}
+
+	.star-twinkle {
+		transform: scale(0.5, 0.5) rotate(135deg);
 	}
 }
