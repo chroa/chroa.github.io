@@ -858,8 +858,8 @@ nav {
   		position: relative;
   		padding-left: 20px;
   		padding-right: 20px;
-  		width: 100%;
   		left: 0;
+  		right: 0;
   	}
 
   	.skills .skills-part-1 {
