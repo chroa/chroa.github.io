@@ -930,18 +930,22 @@ nav {
 
 	@keyframes bounce {
   		0% {
-    		bottom: -19%;
+    		bottom: -15%;
   		}
   		50% {
-    		bottom: -20%;
+    		bottom: -16%;
   		}
   		100% {
-    		bottom: -19%;
+    		bottom: -15%;
   		}
 	}
 
 	.moon {
 		transform: scale(0.5, 0.5);
 		right: 20px;
+	}
+
+	.timeline:after {
+		left: 0;
 	}
 }
