@@ -953,14 +953,14 @@ nav {
     	left: 40px;
     	text-align: left;
     	padding-right: 20px;
-    	right: 0;
+    	width: 80%;
 	}
 
 	.right {
     	left: 40px;
     	text-align: left;
     	padding-right: 20px;
-    	width: 100%;
+    	width: 80%;
 	}
 
 	.container:after {
