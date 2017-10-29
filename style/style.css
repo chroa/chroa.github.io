@@ -204,7 +204,7 @@ nav {
 	transform: translateX(-50%);
 	animation: jump 2s ease infinite;
   	animation-delay: 0.5s;
-  	padding-bottom: 40px;
+  	padding-bottom: 20px;
 }
 
 @keyframes jump { 0% { bottom: 1%; } 50% { bottom: 2%; } 100% { bottom: 1%; } }
@@ -881,5 +881,9 @@ nav {
 
   	.earth-corner {
   		transform: translate(-15%, 30%) scale(0.5, 0.5);
+  	}
+
+  	.arrow-down {
+  		padding-bottom: 50px;
   	}
 }
