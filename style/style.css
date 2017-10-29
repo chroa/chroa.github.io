@@ -875,15 +875,15 @@ nav {
   	}
 
   	#title {
-  		left: 10%;
-  		right: 10%;
+  		left: 40px;
+  		right: 40px;
   	}
 
   	.earth-corner {
-  		transform: translate(-15%, 30%) scale(0.5, 0.5);
+  		transform: scale(0.5, 0.5) translate(-15%, 30%);
   	}
 
   	.arrow-down {
-  		padding-bottom: 50px;
+  		padding-bottom: 60px;
   	}
 }
