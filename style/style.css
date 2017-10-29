@@ -887,7 +887,8 @@ nav {
   	}
 
   	.earth-corner {
-  		transform: scale(0.5, 0.5) translate(-55%, 30%);
+  		transform: scale(0.5, 0.5) translate(-65%, 30%);
+  		position: relative;
   	}
 
   	.arrow-down {
