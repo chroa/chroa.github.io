@@ -539,6 +539,9 @@ nav {
 	transform: rotate(-12deg);
 }
 
+.telescope-arm {
+}
+
 .telescope-arm-small {
 	position: absolute;
 	width: 50px;
@@ -897,4 +900,10 @@ nav {
   	.arrow-down {
   		padding-bottom: 60px;
   	}
+
+  	.telescope-arm {
+		transform: rotate(-15deg);
+		position: relative;
+		bottom: -20px;
+}
 }
