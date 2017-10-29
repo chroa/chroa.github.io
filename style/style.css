@@ -883,10 +883,11 @@ nav {
   	nav {
   		padding-right: 20px;
   		padding-left: 20px;
+  		padding-top: 20px;
   	}
 
   	.earth-corner {
-  		transform: scale(0.5, 0.5) translate(-15%, 30%);
+  		transform: scale(0.5, 0.5) translate(-35%, 30%);
   	}
 
   	.arrow-down {
