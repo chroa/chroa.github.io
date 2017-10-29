@@ -950,17 +950,19 @@ nav {
 	}
 
 	.left {
-    	left: 40px;
+    	left: 0;
+    	right: 0;
     	text-align: left;
+    	padding-left: 40px;
     	padding-right: 20px;
-    	width: 70%;
 	}
 
 	.right {
-    	left: 40px;
+    	left: 0;
+    	right: 0;
     	text-align: left;
     	padding-right: 20px;
-    	width: 70%;
+    	padding-left: 40px;
 	}
 
 	.container:after {
@@ -972,9 +974,7 @@ nav {
 	}
 
 	.container {
-		position: relative;
     	width: 100%;
-    	padding-left: 20px;
     	padding-bottom: 40px;
 	}
 }
