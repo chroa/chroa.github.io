@@ -947,6 +947,7 @@ nav {
 
 	.timeline:after {
 		left: 20px;
+		padding-left: 20px;
 	}
 
 	.left {
@@ -960,7 +961,7 @@ nav {
     	left: 40px;
     	text-align: left;
     	padding-right: 20px;
-    	right: 0;
+    	width: 100%;
 	}
 
 	.container:after {
@@ -972,6 +973,8 @@ nav {
 	}
 
 	.container {
+		position: relative;
     	width: 100%;
+    	padding-left: 20px;
 	}
 }
