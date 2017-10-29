@@ -928,8 +928,15 @@ nav {
 		transform: scale(0.5, 0.5);
 	}
 
-	.moon {
-		transform: scale(0.5, 0.5);
-		position: relative;
-	}
+	@keyframes bounce {
+  		0% {
+    		bottom: 0%;
+  		}
+  		50% {
+    		bottom: 1%;
+  		}
+  		100% {
+    		bottom: 0%;
+  		}
+}
 }
