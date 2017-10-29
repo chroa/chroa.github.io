@@ -854,11 +854,10 @@ nav {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   	.skills {
-  		display: flex;
   		flex-direction: column;
   		position: relative;
   		left: 20px;
-  		right: 20px;
+  		width: 80%;
   	}
 
   	.skills .skills-part-1 {
@@ -896,6 +895,7 @@ nav {
   	.earth-corner {
   		transform: scale(0.5, 0.5) translate(-65%, 30%);
   		position: relative;
+  		top: -10%;
   	}
 
   	.arrow-down {
@@ -908,10 +908,21 @@ nav {
 		bottom: -20px;
 	}
 
-	.rocket {
-    	right: 30%;
-    	bottom: -5%;
-    	transform: rotate(135deg);
+	.star-twinkle.telescope-glow {
+		transform: scale(2, 2);
 	}
 
+	.rocket {
+    	right: 30%;
+    	bottom: -10%;
+    	transform: rotate(125deg);
+	}
+
+	.star-twinkle {
+		transform: scale(0.5, 0.5);
+	}
+
+	.moon {
+		transform: scale(0.5, 0.5);
+	}
 }
