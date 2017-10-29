@@ -905,5 +905,10 @@ nav {
 		transform: rotate(-15deg);
 		position: relative;
 		bottom: -20px;
-}
+	}
+
+	.rocket {
+    	right: 20%;
+    	bottom: -5%;
+	}
 }
