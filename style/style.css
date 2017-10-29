@@ -966,4 +966,12 @@ nav {
 	.container:after {
     	left: 20px;
 	}
+
+	.container div {
+		font-size: 1em;
+	}
+
+	.container {
+    	width: 100%;
+	}
 }
