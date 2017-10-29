@@ -853,6 +853,8 @@ nav {
   		display: flex;
   		flex-direction: column;
   		position: relative;
+  		left: 20px;
+  		right: 20px;
   	}
 
   	.skills .skills-part-1 {
