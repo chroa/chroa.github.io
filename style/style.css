@@ -20,7 +20,7 @@ h1 {
 	margin: 0;
 	width: 100%;
 	font-weight: 400;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 h2 {
@@ -186,8 +186,8 @@ nav {
 #title {
 	position: absolute;
 	top: 40%;
-	transform: translate(-50%, -40%);
-	left: 50%;
+	left: 20%;
+	right: 20%;
 }
 
 #title .greetings {
@@ -832,3 +832,54 @@ nav {
     zoom: 1.0;
 }
 
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	.skills {
+  		display: flex;
+  		flex-direction: column;
+  	}
+
+  	.skills .skills-part-1 {
+  		margin: 0;
+  	}
+
+  	.skills .skills-part-2 {
+  		margin: 0;
+  	}
+
+  	.skill div:nth-child(1) {
+  		font-size: 1.5em;
+  	}
+
+  	h1 {
+  		font-size: 2em;
+  	}
+
+  	.short-description {
+  		font-size: 1em;
+  	}
+
+  	#title {
+  		left: 10%;
+  		right: 10%;
+  	}
+
+  	.earth-corner {
+  		transform: translate(-15%, 30%) scale(0.5, 0.5);
+  	}
+}
