@@ -856,8 +856,9 @@ nav {
   	.skills {
   		flex-direction: column;
   		position: relative;
-  		left: 20px;
-  		width: 80%;
+  		padding-left: 20px;
+  		padding-right: 20px;
+  		width: 100%;
   	}
 
   	.skills .skills-part-1 {
@@ -869,7 +870,7 @@ nav {
   	}
 
   	.skill div:nth-child(1) {
-  		font-size: 1.5em;
+  		font-size: 1em;
   	}
 
   	h1 {
