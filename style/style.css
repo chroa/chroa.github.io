@@ -89,6 +89,7 @@ a {
   	width: 6px;
   	height: 6px;
   	border-radius: 100%;
+  	transform: scale(0.5, 0.5);
   	background-color: whitesmoke;
 }
 
@@ -910,10 +911,7 @@ nav {
 	.rocket {
     	right: 30%;
     	bottom: -5%;
-    	transform: ;
+    	transform: rotate(135deg);
 	}
 
-	.star-twinkle {
-		transform: scale(0.5, 0.5) rotate(135deg);
-	}
 }
