@@ -955,6 +955,7 @@ nav {
     	text-align: left;
     	padding-left: 40px;
     	padding-right: 20px;
+    	position: relative;
 	}
 
 	.right {
@@ -963,6 +964,7 @@ nav {
     	text-align: left;
     	padding-right: 20px;
     	padding-left: 40px;
+    	position: relative;
 	}
 
 	.container:after {
@@ -974,8 +976,6 @@ nav {
 	}
 
 	.container {
-		position: relative;
-    	width: 100%;
     	padding-bottom: 40px;
 	}
 }
