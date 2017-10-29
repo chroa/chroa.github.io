@@ -852,6 +852,7 @@ nav {
   	.skills {
   		display: flex;
   		flex-direction: column;
+  		position: relative;
   	}
 
   	.skills .skills-part-1 {
