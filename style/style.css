@@ -946,6 +946,20 @@ nav {
 	}
 
 	.timeline:after {
-		left: 0;
+		left: 20px;
+	}
+
+	.left {
+    	left: 40px;
+    	text-align: left;
+	}
+
+	.right {
+    	left: 40px;
+    	text-align: left;
+	}
+
+	.container:after {
+    	left: 10px;
 	}
 }
