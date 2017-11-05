@@ -53,6 +53,10 @@ function generateTwinklyStar() {
 	var twinkleDiv1 = document.createElement("div");
 	var twinkleDiv2 = document.createElement("div");
 
+    var duration = Math.random() + 1;
+    twinkleDiv1.style.animation = "twinkle-width " + duration + "s ease infinite";
+    twinkleDiv2.style.animation = "twinkle-height " + duration + "s ease infinite";
+
     twinklyStar.classList.add("star-twinkle");
     twinklyStar.appendChild(twinkleDiv1);
     twinklyStar.appendChild(twinkleDiv2);
@@ -63,28 +67,25 @@ function generateTwinklyStar() {
     twinklyStar.style.right = positionWidth + "%";
     twinklyStar.style.top = positionHeight + "%";
 
+    var size = Math.random() + 0.2;
+    twinklyStar.style.transform = "scale(" + size + "," + size + ")";
+
     var starsContainer = document.getElementById("stars-container");
 	starsContainer.appendChild(twinklyStar);
 
 };
 
-function generateAllStars() {
+function generateAllStars(starsBackgroundNumber, twinklyStarsNumber) {
     var windowWidth = $(document).width();
     var windowHeight = $(document).height();
 
     var titleRect = getTitleCoordinates();
 
-    for(var i = 0; i < 300; i++) {      
+    for(var i = 0; i < starsBackgroundNumber; i++) {      
         generateStar(windowWidth, windowHeight, titleRect);
     }
 
-    for(var i = 0; i < 7; i++) {
+    for(var i = 0; i < twinklyStarsNumber; i++) {
         generateTwinklyStar();
     }
 };
-
-$(document).ready(function() {
-
-    generateAllStars();
-
-});

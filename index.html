@@ -7,62 +7,60 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/common.js"></script>
+	<script type="text/javascript" src="script/index.js"></script>
 </head>
 <body>
+	<div id="constelation"></div>
 	<main>
-		<div id="constelation"></div>
-		<section id="front-section">
+		<section id="front">
 			<nav>
-				<div class="nav-item selected">About</div>
-				<div class="nav-item">Portfolio</div>
+				<div class="nav-item selected"><a href="index.html">About</a></div>
+				<div class="nav-item"><a href="portfolio.html">Portfolio</a></div>
 			</nav>
 			<div id="title">
-				<div class="greetings">
-					<h1>Hey there!</h1>
-					<h1>I'm Joana Rocha,</h1>
-					<div class="short-description">An Outsystems developer and a full-stack enthusiast.</div>
-				</div>	
+				<h1>Hi there! I'm Joana Rocha,</h1>
+				<div class="short-bio">An Outsystems developer and a full-stack enthusiast.</div>
 			</div>
 			<div class="arrow-down">
-				<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+				<a href="#skills"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
 			</div>
 		</section>
-		<section id="skills-section">
-			<div class="skills">
-				<div class="skills-part-1">
+		<section id="skills">
+			<div class="skills-container">
+				<div class="skills-item">
 					<div class="skill">
-						<div>Outsystems</div>
+						<h3>Outsystems</h3>
 						<div class="skillbar fill-70"></div>
 					</div>
 					<div class="skill">
-						<div>HTML/HTML5</div>
+						<h3>HTML/HTML5</h3>
 						<div class="skillbar fill-50"></div>
 					</div>
 					<div class="skill">
-						<div>CSS/CSS3</div>
+						<h3>CSS/CSS3</h3>
 						<div class="skillbar fill-45"></div>
 					</div>
 					<div class="skill">
-						<div>Javascript</div>
+						<h3>Javascript</h3>
 						<div class="skillbar fill-35"></div>
 					</div>
 				</div>
-				<div class="skills-part-2">
+				<div class="skills-item">
 					<div class="skill">
-						<div>SQL/Oracle</div>
+						<h3>SQL/Oracle</h3>
 						<div class="skillbar fill-45"></div>
 					</div>
 					<div class="skill">
-						<div>Cordova</div>
+						<h3>Cordova</h3>
 						<div class="skillbar fill-50"></div>
 					</div>
 					<div class="skill">
-						<div>Java</div>
+						<h3>Java</h3>
 						<div class="skillbar fill-70"></div>
 					</div>
 					<div class="skill">
-						<div>Objective-C</div>
+						<h3>Objective-C</h3>
 						<div class="skillbar fill-25"></div>
 					</div>
 				</div>
@@ -99,7 +97,7 @@
 					<div class="cloud-big-part-3"></div>
 					<div class="cloud-big-part-4"></div>
 				</div>
-				<div class="rocket">
+				<div class="rocket frontpage">
 					<div class="rocket-flame-big"></div>
 					<div class="rocket-flame-small"></div>
 					<div class="rocket-body"></div>
@@ -114,24 +112,24 @@
 			</div>
 			<div class="moon"></div>
 		</section>
-		<section id="timeline-section">
-			<div class="timeline">
-  				<div class="container">
-  					<div class="right"><h3>Currently...</h3><div>...busy on several projects.</div><div>Also, working my hardest in order to improve my front-end skills! Go checkout my Codepen and Portfolio to see what I'm up to.</div>
+		<section id="timeline">
+			<div class="timeline-container">
+  				<div class="timeline-item">
+  					<div class="right"><h3>Currently...</h3><div>...busy on several projects.</div><div>Also, working my hardest in order to improve my front-end skills! Go checkout my Portfolio to see what I'm up to.</div>
   					</div>
   				</div>
-				<div class="container">
-					<div class="left"><h3>July 2O17</h3><div>Participated as an Outsystems developer in mostly web application projects.</div><div>Participated as an Outsystems developer in the NextStep 2017 Mobile app. NextStep is an annual event hosted by Outsystems, which contains several conferences targeted for anyone involved in the IT business.</div></div>
+				<div class="timeline-item">
+					<div class="left"><h3>July 2O17</h3><div>Participated as an Outsystems developer in the NextStep 2017 Mobile app. NextStep is an annual event hosted by Outsystems, which contains several conferences targeted for anyone involved in the IT business.</div></div>
 				</div>
-				<div class="container">
+				<div class="timeline-item">
   					<div class="right"><h3>October 2O16</h3><div>Started working as an Outsystem developer at Outfit, a company focusing mainly on the Outsystems technology to develop solutions for other companies.</div></div>
   				</div>
-				<div class="container">
+				<div class="timeline-item">
 					<div class="left"><h3>May 2O16</h3><div>Graduated as a MSc in Computer Science and Software Engineering at Instituto Superior T&eacute;cnico.</div></div>
 				</div>
 			</div>
+			<footer>&copy; 2O17 Joana Rocha</footer>
 		</section>
 	</main>
-	<footer>&copy; 2O17 Joana Rocha</footer>
 </body>
 </html>

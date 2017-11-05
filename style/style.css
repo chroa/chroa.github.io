@@ -3,62 +3,8 @@ body {
 	margin: 0;
 	background-color: #181743;
 	color: whitesmoke;
-}
-
-main {
 	position: relative;
 }
-
-section {
-	min-height: 100vh;
-	width: 100%;
-	position: relative;
-	padding: 0;
-}
-
-h1 {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 2.5em;
-}
-
-h2 {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 2.5em;
-}
-
-h3 {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 2em;
-}
-
-h4 {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 1.5em;
-}
-
-footer {
-	text-align: center;
-	padding-top: 100px;
-	color: whitesmoke;
-	padding-bottom: 20px;
-}
-
-a {
-	text-decoration: none;
-	color: whitesmoke;
-}
-
-/*****************************/
-/** Stars in the background **/
-/*****************************/
 
 #constelation {
 	position: absolute;
@@ -66,10 +12,16 @@ a {
 	height: 100%;
 }
 
+main {
+	position: relative;
+	min-height: 100vh;
+}
+
 .star {
 	background-color: whitesmoke;
 	border-radius: 100%;
 	position: absolute;
+	box-shadow: 0 0 20px white;
 }
 
 #stars-container {
@@ -80,78 +32,19 @@ a {
 	right: 3%;
 }
 
-/*******************/
-/** Twinkly stars **/
-/*******************/
-
-.star-twinkle {
-	position: absolute;
-  	width: 6px;
-  	height: 6px;
-  	border-radius: 100%;
-  	transform: scale(0.5, 0.5);
-  	background-color: whitesmoke;
+#front {
+	margin-bottom: 10%;
 }
 
-.star-twinkle div:nth-child(1) {
-  	position: absolute;
-  	height: 4px;
-  	border-radius: 100%;
-  	animation: twinkle-width 1s ease infinite;
-  	top: 50%;
-  	transform: translateY(-50%);
-  	background-color: whitesmoke;
+section {
+	height: 100vh;
+	position: relative;
 }
 
-.star-twinkle div:nth-child(2) {
-	position: absolute;
-  	width: 4px;
-  	border-radius: 100%;
-  	animation: twinkle-height 1s ease infinite;
-  	left: 50%;
-  	transform: translateX(-50%);
-  	background-color: whitesmoke;
+a {
+	text-decoration: none;
+	color: whitesmoke;
 }
-
-@keyframes twinkle-height {
-  0% {
-    height: 20px;
-    top: -6px;
-    opacity: 0.8;
-  }
-  50% {
-    height: 4px;
-    top: 0px;
-    opacity: 1;
-  }
-  100% {
-    height: 20px;
-    top: -6px;
-    opacity: 0.8;
-  }
-}
-
-@keyframes twinkle-width {
-  0% {
-    width: 20px;
-    left: -6px;
-    opacity: 0.8;
-  }
-  50% {
-    width: 4px;
-    left: 0px;
-    opacity: 1;
-  }
-  100% {
-    width: 20px;
-    left: -6px;
-    opacity: 0.8;
-  }
-}
-
-/******************************/
-/** Navigation bar and items **/
-/******************************/
 
 nav {
 	padding-top: 40px;
@@ -176,12 +69,11 @@ nav {
 	border-bottom-right-radius: 1px;
 }
 
-/*******************/
-/** Front section **/
-/*******************/
-
-#front-section {
-	width: 100%;
+footer {
+	text-align: center;
+	padding-top: 100px;
+	color: whitesmoke;
+	padding-bottom: 20px;
 }
 
 #title {
@@ -189,12 +81,10 @@ nav {
 	top: 40%;
 	left: 20%;
 	right: 20%;
+	text-align: center;
 }
 
-#title .greetings {
-}
-
-.short-description {
+.short-bio {
 	margin-top: 20px;
 	font-size: 1.5em;
 }
@@ -210,15 +100,19 @@ nav {
 
 @keyframes jump { 0% { bottom: 1%; } 50% { bottom: 2%; } 100% { bottom: 1%; } }
 
-/********************/
-/** Skills section **/
-/********************/
-
-#skills-section {
-	padding-top: 60px;
+h1 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 2.5em;
 }
 
-.skills {
+h3 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 2em;
+}
+
+.skills-container {
 	position: absolute;
 	left: 30%;
 	top: 25%;
@@ -227,31 +121,18 @@ nav {
 	display: flex;
 }
 
-.skills .skills-part-1 {
-	order: 1;
+.skills-item {
 	flex-grow: 1;
 	width: 100%;
 	position: relative;
-	margin-right: 20px;
-}
-
-.skills .skills-part-2 {
-	order: 2;
-	flex-grow: 1;
-	width: 100%;
-	position: relative;
-	margin-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .skill {
 	margin-bottom: 20px;
-}
-
-.skill div:nth-child(1) {
-	margin: 0;
-	width: 100%;
-	font-weight: 400;
-	font-size: 2em;
+	position: relative;
+	white-space: nowrap;
 }
 
 .skill:after {
@@ -299,16 +180,12 @@ nav {
 	right: 80%;
 }
 
-/**********************/
-/** Timeline section **/
-/**********************/
-
-.timeline {
+.timeline-container {
   	position: relative;
   	padding-top: 300px;
 }
 
-.timeline:after {
+.timeline-container:after {
 	content: '';
 	position: absolute;
 	width: 6px;
@@ -321,11 +198,11 @@ nav {
   	border-bottom-right-radius: 100px;
 }
 
-.container {
+.timeline-item {
     min-height: 200px;
 }
 
-.container div {
+.timeline-item div {
 	margin-bottom: 10px;
 }
 
@@ -343,7 +220,7 @@ nav {
     width: 25%;
 }
 
-.container:after {
+.timeline-item:after {
 	content: '';
 	position: absolute;
   	width: 25px;
@@ -658,11 +535,73 @@ nav {
   }
 }
 
-.rocket {
-    position: absolute;
+.rocket.frontpage {
+	position: absolute;
     right: -20%;
     bottom: 0;
     transform: rotate(115deg);
+}
+
+.rocket {
+}
+
+.rocket.portfolio {
+	position: absolute;
+	transform: scale(2,2) rotate(70deg);
+	top: -50px;
+	left: 8%;
+}
+
+.rocket .smiley {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	top: -67px;
+	left: 53px;
+	position: absolute;
+	opacity: 0.5;
+}
+
+.smiley .left-eye {
+	position: absolute;
+	background-color: black;
+	width: 2px;
+	height: 2px;
+	border-radius: 100%;
+	top: 65%;
+	left: 78%;
+}
+
+.smiley .right-eye {
+	position: absolute;
+	background-color: black;
+	width: 2px;
+	height: 2px;
+	border-radius: 100%;
+	top: 25%;
+	left: 78%;
+}
+
+.smiley .mouth-left {
+	position: absolute;
+	background-color: black;
+	width: 6px;
+	height: 2px;
+	border-radius: 100%;
+	left: 80%;
+	transform: rotate(-45deg);
+	top: 49%;
+}
+
+.smiley .mouth-right {
+	position: absolute;
+	background-color: black;
+	width: 6px;
+	height: 2px;
+	border-radius: 100%;
+	left: 80%;
+	transform: rotate(45deg);
+	top: 41%;
 }
 
 @keyframes flamebig-move {
@@ -824,160 +763,78 @@ nav {
 	transform: rotate(262deg);
 }
 
-/** Mobile Friendly Stuff **/
+/*******************/
+/** Twinkly stars **/
+/*******************/
 
-@viewport{
-    zoom: 1.0;
-    width: device-width;
+.star-twinkle {
+	position: absolute;
+  	width: 6px;
+  	height: 6px;
+  	border-radius: 100%;
+  	background-color: whitesmoke;
 }
 
-@-ms-viewport{
-    width: device-width;
-    zoom: 1.0;
+.star-twinkle div:nth-child(1) {
+  	position: absolute;
+  	height: 4px;
+  	border-radius: 100%;
+  	/*animation: twinkle-width 1s ease infinite; <-- set through javascript*/
+  	top: 50%;
+  	transform: translateY(-50%);
+  	background-color: whitesmoke;
 }
 
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+.star-twinkle.telescope-glow div:nth-child(1) {
+	animation: twinkle-width 2s ease infinite;
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-  	.skills {
-  		flex-direction: column;
-  		position: relative;
-  		padding-left: 20px;
-  		padding-right: 20px;
-  		left: 0;
-  		right: 0;
-  	}
+.star-twinkle div:nth-child(2) {
+	position: absolute;
+  	width: 4px;
+  	border-radius: 100%;
+  	/*animation: twinkle-height 1s ease infinite; <-- set through javascript*/
+  	left: 50%;
+  	transform: translateX(-50%);
+  	background-color: whitesmoke;
+}
 
-  	.skills .skills-part-1 {
-  		margin: 0;
-  	}
+.star-twinkle.telescope-glow div:nth-child(2) {
+	animation: twinkle-height 2s ease infinite;
+}
 
-  	.skills .skills-part-2 {
-  		margin: 0;
-  	}
+@keyframes twinkle-height {
+  0% {
+    height: 20px;
+    top: -6px;
+    opacity: 0.8;
+  }
+  50% {
+    height: 4px;
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    height: 20px;
+    top: -6px;
+    opacity: 0.8;
+  }
+}
 
-  	.skill div:nth-child(1) {
-  		font-size: 1.5em;
-  	}
-
-  	h1 {
-  		font-size: 2em;
-  	}
-
-  	h3 {
-  		font-size: 1.5em;
-  	}
-
-  	.short-description {
-  		font-size: 1em;
-  	}
-
-  	#title {
-  		left: 20px;
-  		right: 20px;
-  		top: 35%;
-  	}
-
-  	nav {
-  		padding-right: 20px;
-  		padding-left: 20px;
-  		padding-top: 20px;
-  	}
-
-  	.earth-corner {
-  		transform: scale(0.5, 0.5) translate(-65%, 30%);
-  		position: relative;
-  		top: -10%;
-  	}
-
-  	.arrow-down {
-  		padding-bottom: 60px;
-  	}
-
-  	.telescope-arm {
-		transform: rotate(-15deg);
-		position: relative;
-		bottom: -20px;
-	}
-
-	.star-twinkle.telescope-glow {
-		transform: scale(2, 2);
-	}
-
-	.rocket {
-    	right: 30%;
-    	bottom: -10%;
-    	transform: rotate(125deg);
-	}
-
-	.star-twinkle {
-		transform: scale(0.5, 0.5);
-	}
-
-	@keyframes bounce {
-  		0% {
-    		bottom: -15%;
-  		}
-  		50% {
-    		bottom: -16%;
-  		}
-  		100% {
-    		bottom: -15%;
-  		}
-	}
-
-	.moon {
-		transform: scale(0.5, 0.5);
-		right: 20px;
-	}
-
-	.timeline:after {
-		left: 20px;
-	}
-
-	.left {
-    	left: 0;
-    	right: 0;
-    	text-align: left;
-    	padding-left: 40px;
-    	padding-right: 20px;
-    	width: 100%;
-	}
-
-	.right {
-    	left: 0;
-    	right: 0;
-    	text-align: left;
-    	padding-right: 20px;
-    	padding-left: 40px;
-    	width: 100%;
-	}
-
-	.container:after {
-    	left: 20px;
-	}
-
-	.container div {
-		font-size: 1em;
-	}
-
-	.container {
-    	padding-bottom: 40px;
-    	position: relative;
-    	width: 100%;
-	}
+@keyframes twinkle-width {
+  0% {
+    width: 20px;
+    left: -6px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 4px;
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 20px;
+    left: -6px;
+    opacity: 0.8;
+  }
 }
