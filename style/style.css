@@ -547,7 +547,8 @@ h3 {
 
 .rocket.portfolio {
 	position: absolute;
-	transform: scale(2,2) rotate(70deg);
+	transform: scale(2) rotate(70deg);
+	-webkit-transform: scale(2) rotate(70deg);
 	top: -50px;
 	left: 8%;
 }
@@ -556,52 +557,52 @@ h3 {
 	width: 40px;
 	height: 40px;
 	border-radius: 100%;
-	top: -67px;
-	left: 53px;
+	left: 55%;
 	position: absolute;
 	opacity: 0.5;
+	background-color: white;
 }
 
 .smiley .left-eye {
 	position: absolute;
-	background-color: black;
+	background-color: gray;
 	width: 2px;
 	height: 2px;
 	border-radius: 100%;
 	top: 65%;
-	left: 78%;
+	left: 18%;
 }
 
 .smiley .right-eye {
 	position: absolute;
-	background-color: black;
+	background-color: gray;
 	width: 2px;
 	height: 2px;
 	border-radius: 100%;
 	top: 25%;
-	left: 78%;
+	left: 18%;
 }
 
 .smiley .mouth-left {
 	position: absolute;
-	background-color: black;
+	background-color: gray;
 	width: 6px;
 	height: 2px;
-	border-radius: 100%;
-	left: 80%;
+	border-radius: 20px;
+	left: 20%;
 	transform: rotate(-45deg);
-	top: 49%;
+	top: 48%;
 }
 
 .smiley .mouth-right {
 	position: absolute;
-	background-color: black;
+	background-color: gray;
 	width: 6px;
 	height: 2px;
-	border-radius: 100%;
-	left: 80%;
+	border-radius: 20px;
+	left: 20%;
 	transform: rotate(45deg);
-	top: 41%;
+	top: 40%;
 }
 
 @keyframes flamebig-move {
@@ -649,7 +650,12 @@ h3 {
   	position: absolute;
   	left: 35px;
   	opacity: 0.5;
-  	animation: flamebig-move 1s ease infinite;
+  	transform: rotate(-45deg);
+
+}
+
+.rocket-flame-big.animated {
+	animation: flamebig-move 1s ease infinite;
 }
 
 .rocket-flame-small {
@@ -661,7 +667,11 @@ h3 {
   	position: absolute;
   	left: 50px;
   	opacity: 0.5;
-  	animation: flamesmall-move 1s ease infinite;
+  	transform: rotate(-45deg);
+}
+
+.rocket-flame-small.animated {
+	animation: flamesmall-move 1s ease infinite;
 }
 
 .rocket-body{
@@ -711,6 +721,7 @@ h3 {
 	top: -70px;
 	left: 50px;
 	box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
 }
 
 .rocket-backwing-middle-left {
@@ -837,4 +848,22 @@ h3 {
     left: -6px;
     opacity: 0.8;
   }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (orientation: portrait) {
+
 }
