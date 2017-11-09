@@ -865,5 +865,77 @@ h3 {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (orientation: portrait) {
-
+  	  #title {
+          top: 30%;
+          left: 15%;
+          right: 15%;
+      }
+      
+      h1 {
+          font-size: 2.2em;
+      }
+      
+      h3 {
+          font-size: 1.5em;
+      }
+      
+      .short-bio {
+          font-size: 1.2em;
+      }
+      
+      nav {
+          padding-top: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+      
+      .arrow-down {
+          padding-bottom: 30%;
+      }
+      
+      .earth-corner {
+          transform: scale(0.5);
+          left: -60%;
+          bottom: -40%;
+      }
+      
+      .skills-container {
+          left: 10%;
+          right: 10%;
+      }
+      
+      .telescope-arm {
+          transform: rotate(-15deg);
+          position: relative;
+          top: 15px;
+      }
+      
+      .moon {
+          transform: scale(0.5);
+      }
+      
+      .timeline-container:after {
+          left: 0;
+          margin-left: 30px;
+      }
+      
+      .timeline-item:after {
+          left: 0;
+          margin-left: 30px;
+      }
+      
+      .timeline-item .left {
+          left: 20%;
+          right: 0;
+          text-align: left;
+          width: 80%;
+      }
+      
+      .timeline-item .right {
+          left: 20%;
+          right: 0;
+          text-align: left;
+          width: 80%;
+      }
+ 
 }
