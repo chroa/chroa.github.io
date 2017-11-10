@@ -905,7 +905,7 @@ h3 {
           flex-direction: column;
       }
       
-      .skill-item {
+      .skills-item {
           margin: 0;
       }
       
@@ -919,7 +919,7 @@ h3 {
          left: 80%;
          bottom: -20%;
          right: auto;
-          transform: rotate(140deg); 
+         transform: rotate(140deg); 
       }
       
       .moon {
@@ -951,9 +951,9 @@ h3 {
       .timeline-item .right {
           left: 20%;
           text-align: left;
-          width: 100%;
           right: 0;
           width: auto;
+          padding-right: 20px;
       }
 
       .rocket.portfolio {
