@@ -900,9 +900,13 @@ h3 {
       }
       
       .skills-container {
-          left: 10%;
-          right: 10%;
+          left: 20px;
+          right: 20px;
           flex-direction: column;
+      }
+      
+      .skill-item {
+          margin: 0;
       }
       
       .telescope-arm {
@@ -950,6 +954,12 @@ h3 {
           width: 100%;
           right: 0;
           width: auto;
+      }
+
+      .rocket.portfolio {
+          transform: scale(0.8) rotate(70deg);
+          top: -5%;
+          left: 15%;
       }
  
 }
