@@ -895,13 +895,14 @@ h3 {
       
       .earth-corner {
           transform: scale(0.5);
-          left: -60%;
-          bottom: -40%;
+          left: -55%;
+          bottom: -100%;
       }
       
       .skills-container {
           left: 10%;
           right: 10%;
+          flex-direction: column;
       }
       
       .telescope-arm {
@@ -910,32 +911,45 @@ h3 {
           top: 15px;
       }
       
+      .rocket.frontpage {
+         left: 80%;
+         bottom: -20%;
+         right: auto;
+          transform: rotate(140deg); 
+      }
+      
       .moon {
           transform: scale(0.5);
       }
       
+      #timeline {
+          padding-top: 90%;
+      }
+      
       .timeline-container:after {
           left: 0;
-          margin-left: 30px;
+          margin-left: 40px;
       }
       
       .timeline-item:after {
           left: 0;
-          margin-left: 30px;
+          margin-left: 40px;
       }
       
       .timeline-item .left {
           left: 20%;
-          right: 0;
+          padding-right: 20px;
           text-align: left;
-          width: 80%;
+          right: 0;
+          width: auto;
       }
       
       .timeline-item .right {
           left: 20%;
-          right: 0;
           text-align: left;
-          width: 80%;
+          width: 100%;
+          right: 0;
+          width: auto;
       }
  
 }
