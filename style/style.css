@@ -875,7 +875,7 @@ h3 {
       .earth-corner {
           transform: scale(0.5);
           left: -30%;
-          bottom: -100%;
+          bottom: -120%;
       }
       
       .moon {
@@ -909,6 +909,19 @@ h3 {
       .rocket.portfolio {
           transform: scale(0.8) rotate(70deg);
           top: -3%;
+      }
+
+      .short-bio {
+          font-size: 1.2em;
+          margin-top: 10px;
+      }
+
+      nav {
+          padding-top: 20px;
+      }
+      
+      #timeline {
+          padding-top: 15%;
       }
 }
 
