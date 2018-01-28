@@ -46,6 +46,10 @@ a {
 	color: whitesmoke;
 }
 
+.external-link:hover {
+	text-decoration: underline;
+}
+
 nav {
 	padding-top: 40px;
 	padding-left: 40px;
@@ -78,10 +82,10 @@ footer {
 
 #title {
 	position: absolute;
-	top: 40%;
-	left: 20%;
+	top: 35%;
+	left: 40%;
 	right: 20%;
-	text-align: center;
+	text-align: left;
 }
 
 .short-bio {
@@ -110,6 +114,14 @@ h3 {
 	margin: 0;
 	font-weight: 400;
 	font-size: 2em;
+}
+
+.logos {
+	margin-top: 20px;
+}
+
+.logos i {
+	margin-right: 10px;
 }
 
 .skills-container {
@@ -774,6 +786,240 @@ h3 {
 	transform: rotate(262deg);
 }
 
+.astronaut {
+	position: absolute;
+	right: -15px;
+	transform: translateY(-50%) scale(3) rotate(-30deg);
+	width: 30px;
+	height: 60px;
+	top: 30px;
+	/*animation: floating 3s ease infinite;*/
+}
+
+@keyframes floating {
+	0% {
+		top: 30px;
+	}
+	50% {
+		top: 40px;
+	}
+	100% {
+		top: 30px;
+	}
+}
+
+.astronaut .helmet {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: whitesmoke;
+	box-shadow: inset 0 -1px rgba(209, 211, 215, 0.5);
+}
+
+.helmet .screen {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #C3E3E7;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0 7px rgba(161, 210, 211, 0.5);
+}
+
+.helmet .left-ear {
+	position: absolute;
+	left: -2px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 5px;
+	height: 10px;
+	background-color: #D1D3D7;
+	border-radius: 20px;
+}
+
+.helmet .right-ear {
+	position: absolute;
+	right: -2px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 5px;
+	height: 10px;
+	background-color: #D1D3D7;
+	border-radius: 20px;
+}
+
+.astronaut .body {
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: whitesmoke;
+	left: 50%;
+	top: 24px;
+	transform: translateX(-50%);
+}
+
+.body .left-arm {
+	position: absolute;
+	top: 8px;
+	left: -8px;
+	transform: translateY(-50%);
+}
+
+.upper-arm {
+	width: 12px;
+	height: 8px;
+	background-color: whitesmoke;
+}
+
+.left-arm .upper-arm {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.right-arm .upper-arm {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.forearm {
+	width: 12px;
+	height: 8px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	transform: rotate(90deg);
+}
+
+.left-arm .forearm {
+	position: absolute;
+	top: -1px;
+	left: -4px;
+	transform: rotate(30deg);
+}
+
+.right-arm .forearm {
+	position: absolute;
+	top: -1px;
+	right: -4px;
+	transform: rotate(-30deg);
+}
+
+.body .right-arm {
+	position: absolute;
+	top: 8px;
+	right: -8px;
+	transform: translateY(-50%);
+}
+
+.body .right-leg {
+	position: absolute;
+	bottom: -6px;
+	transform: translateY(-50%) rotate(40deg);
+	left: -8px;
+}
+
+.leg {
+	width: 20px;
+	height: 8px;
+	background-color: whitesmoke;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	transform: rotate(90deg);
+}
+
+.foot {
+	width: 12px;
+	height: 8px;
+	background-color: whitesmoke;
+	box-shadow: inset 0 -2px rgba(209, 211, 215, 1);
+}
+
+.right-leg .foot {
+	position: absolute;
+	left: 2px;
+	bottom: -7px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 2px;
+}
+
+.left-leg .foot {
+	position: absolute;
+	right: 2px;
+	bottom: -7px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 2px;
+}
+
+.body .left-leg {
+	position: absolute;
+	bottom: -6px;
+	transform: translateY(-50%) rotate(-40deg);
+	right: -8px;
+}
+
+.astronaut .backpack {
+	width: 28px;
+	height: 35px;
+	background-color: #D1D3D7;
+	position: absolute;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 20px;
+}
+
+.astronaut-area {
+	position: absolute;
+	top: 40%;
+	left: -5%;
+	width: 30%;
+	padding-top: 15%;
+}
+
+.astronaut-area .string-area {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	transform: scaleY(-1);
+	/*animation: floating-string 3s ease infinite;*/
+}
+
+.string-area .string {
+	position: absolute;
+	width: 100%;
+	padding-top: 100%;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 100%;
+	top: 0;
+	left: 0;
+}
+
+@keyframes floating-string {
+	0% {
+		transform: scaleY(-1) rotate(0deg);
+	}
+	50% {
+		transform: scaleY(-1) rotate(-4deg);
+	}
+	100% {
+		transform: scaleY(-1) rotate(0deg);
+	}
+}
+
 /*******************/
 /** Twinkly stars **/
 /*******************/
@@ -968,6 +1214,7 @@ h3 {
           left: 20px;
           right: 20px;
           flex-direction: column;
+          top: 0;
       }
       
       .skills-item {
