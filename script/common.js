@@ -1,5 +1,5 @@
 
-function generateStar(windowWidth, windowHeight, titleRect) {
+function generateStar(windowWidth, windowHeight, rect = new DOMRect(0, 0, 0, 0)) {
 
     var star = document.createElement("div");
 
@@ -8,7 +8,7 @@ function generateStar(windowWidth, windowHeight, titleRect) {
     var positionWidth = Math.floor(Math.random()*(windowWidth-4));
     var positionHeight = Math.floor(Math.random()*(windowHeight-4));
 
-    while(overlapsTitle(positionWidth, positionHeight, titleRect)) {
+    while(overlapsTitle(positionWidth, positionHeight, rect)) {
     	positionWidth = Math.floor(Math.random()*(windowWidth-4));
     	positionHeight = Math.floor(Math.random()*(windowHeight-4));
     }
@@ -25,7 +25,7 @@ function generateStar(windowWidth, windowHeight, titleRect) {
 
 };
 
-function overlapsTitle(positionWidth, positionHeight, rect) {
+function overlapsTitle(positionWidth, positionHeight, rect = new DOMRect(0, 0, 0, 0)) {
 
 	var isOverlapping = false;
 
@@ -44,6 +44,15 @@ function getTitleCoordinates() {
 	var rect = title.getBoundingClientRect();
 
 	return rect;
+
+};
+
+function getBlogCoordinates() {
+
+    var blog = document.getElementById("blog");
+    var rect = blog.getBoundingClientRect();
+
+    return rect;
 
 };
 

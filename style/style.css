@@ -96,6 +96,7 @@ footer {
 .arrow-down {
 	position: absolute;
 	left: 50%;
+	bottom: 1%;
 	transform: translateX(-50%);
 	animation: jump 2s ease infinite;
   	animation-delay: 0.5s;
@@ -120,8 +121,24 @@ h3 {
 	margin-top: 20px;
 }
 
-.logos i {
+.logos svg {
 	margin-right: 10px;
+}
+
+#blog {
+	position: absolute;
+	top: 35%;
+	right: 15%;
+	left: 15%;
+}
+
+.post {
+	margin-bottom: 20px;
+}
+
+.content {
+	margin-top: 20px;
+	font-weight: 400;
 }
 
 .skills-container {
@@ -523,6 +540,10 @@ h3 {
 	top: 10px;
 }
 
+/******************/
+/** Moon drawing **/
+/******************/
+
 .moon {
 	position: absolute;
   	width: 100px;
@@ -547,6 +568,10 @@ h3 {
   }
 }
 
+/********************/
+/** Rocket drawing **/
+/********************/
+
 .rocket.frontpage {
 	position: absolute;
     right: -20%;
@@ -557,7 +582,7 @@ h3 {
 .rocket {
 }
 
-.rocket.portfolio {
+.rocket.blogpage {
 	position: absolute;
 	transform: scale(2) rotate(70deg);
 	-webkit-transform: scale(2) rotate(70deg);
@@ -686,7 +711,7 @@ h3 {
 	animation: flamesmall-move 1s ease infinite;
 }
 
-.rocket-body{
+.rocket-body {
 	width: 150px;
   	height: 150px;
   	border-radius: 75% 0%;
@@ -786,14 +811,18 @@ h3 {
 	transform: rotate(262deg);
 }
 
+/***********************/
+/** Astronaut drawing **/
+/***********************/
+
 .astronaut {
 	position: absolute;
 	right: -15px;
-	transform: translateY(-50%) scale(3) rotate(-30deg);
+	transform: translateY(-50%) rotate(-30deg);
 	width: 30px;
 	height: 60px;
 	top: 30px;
-	/*animation: floating 3s ease infinite;*/
+	animation: floating 3s ease infinite;
 }
 
 @keyframes floating {
@@ -994,8 +1023,7 @@ h3 {
 	left: 0;
 	right: 0;
 	overflow: hidden;
-	transform: scaleY(-1);
-	/*animation: floating-string 3s ease infinite;*/
+	animation: floating-string 3s ease infinite;
 }
 
 .string-area .string {
@@ -1013,7 +1041,7 @@ h3 {
 		transform: scaleY(-1) rotate(0deg);
 	}
 	50% {
-		transform: scaleY(-1) rotate(-4deg);
+		transform: scaleY(-1) rotate(-3deg);
 	}
 	100% {
 		transform: scaleY(-1) rotate(0deg);
@@ -1152,7 +1180,7 @@ h3 {
           width: 35%;
       }
 
-      .rocket.portfolio {
+      .rocket.blogpage {
           transform: scale(0.8) rotate(70deg);
           top: -3%;
       }
@@ -1268,7 +1296,7 @@ h3 {
           padding-right: 20px;
       }
 
-      .rocket.portfolio {
+      .rocket.blogpage {
           transform: scale(0.8) rotate(70deg);
           top: -5%;
           left: 15%;

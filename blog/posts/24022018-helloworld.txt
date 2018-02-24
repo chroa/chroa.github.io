@@ -1,0 +1,21 @@
+<post>
+
+<date>February 24, 2018</date>
+
+<title>Space Diary #1 - Hello World!</title>
+
+<tags>first,hello,world</tags>
+
+<content>
+
+Hi there, friend! This is where I'll be posting some of my coding adventures.
+
+My gigantic willing to learn sometimes leads me to distract between various subjects. A blog page is something that I found useful as it can help me focus on a specific subject at a time and learn more about it in detail.
+
+Plus I enjoy writing!
+
+Over n'out.
+
+</content>
+
+</post>
