@@ -1233,7 +1233,7 @@ h3 {
 	  }
       
       .astronaut-area .string-area {
-      	animation: floating-string_mobile 1s ease infinite;
+      	animation: floating-string_mobile 3s ease infinite;
       }
       
       @keyframes floating-string_mobile {
