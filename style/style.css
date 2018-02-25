@@ -1126,6 +1126,78 @@ h3 {
 
 /* Phones */
 
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (orientation: landscape) {
+  	
+      #title {
+          top: 30%;
+          left: 15%;
+          right: 15%;
+      }
+      
+	  h1 {
+          font-size: 2.2em;
+      }
+      
+      h3 {
+          font-size: 1.5em;
+      }
+      
+      .earth-corner {
+          transform: scale(0.5);
+          left: -30%;
+          bottom: -120%;
+      }
+      
+      .moon {
+          transform: scale(0.5);     
+      }
+      
+      .arrow-down {
+          padding-bottom: 0;
+      }
+      
+      .rocket.frontpage {
+         left: 90%;
+         bottom: -5%;
+         right: auto;
+      }
+      
+      .skills-container {
+          left: 20%;
+          right: 20%;
+      }
+      
+      .left {
+          width: 35%;
+      }
+      
+      .right {
+          width: 35%;
+      }
+
+      .rocket.blogpage {
+          transform: scale(0.8) rotate(70deg);
+          top: -3%;
+      }
+
+      .short-bio {
+          font-size: 1.2em;
+          margin-top: 10px;
+      }
+
+      nav {
+          padding-top: 20px;
+      }
+      
+      #timeline {
+          padding-top: 15%;
+      }
+}
+
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
@@ -1267,3 +1339,5 @@ h3 {
           left: 15%;
       }
 }
+
+/* Tablets should have no problem viewing the desktop version */
