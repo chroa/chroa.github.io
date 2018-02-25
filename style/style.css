@@ -1170,7 +1170,7 @@ h3 {
 			transform: scaleY(-1) rotate(0deg);
 		}
 		50% {
-			transform: scaleY(-1) rotate(-9deg);
+			transform: scaleY(-1) rotate(-6deg);
 		}
 		100% {
 			transform: scaleY(-1) rotate(0deg);
