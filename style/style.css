@@ -21,7 +21,8 @@ main {
 	background-color: whitesmoke;
 	border-radius: 100%;
 	position: absolute;
-	box-shadow: 0 0 20px white;
+	-webkit-box-shadow: 0 0 20px white;
+	        box-shadow: 0 0 20px white;
 }
 
 #stars-container {
@@ -97,11 +98,17 @@ footer {
 	position: absolute;
 	left: 50%;
 	bottom: 1%;
-	transform: translateX(-50%);
-	animation: jump 2s ease infinite;
-  	animation-delay: 0.5s;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	-webkit-animation: jump 2s ease infinite;
+	        animation: jump 2s ease infinite;
+  	-webkit-animation-delay: 0.5s;
+  	        animation-delay: 0.5s;
   	padding-bottom: 20px;
 }
+
+@-webkit-keyframes jump { 0% { bottom: 1%; } 50% { bottom: 2%; } 100% { bottom: 1%; } }
 
 @keyframes jump { 0% { bottom: 1%; } 50% { bottom: 2%; } 100% { bottom: 1%; } }
 
@@ -147,11 +154,15 @@ h3 {
 	top: 25%;
 	right: 30%;
 	z-index: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .skills-item {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	width: 100%;
 	position: relative;
 	margin-right: 10px;
@@ -222,7 +233,9 @@ h3 {
   	top: 300px;
   	bottom: 0;
   	left: 50%;
-  	transform: translateX(-50%);
+  	-webkit-transform: translateX(-50%);
+  	    -ms-transform: translateX(-50%);
+  	        transform: translateX(-50%);
   	border-bottom-left-radius: 100px;
   	border-bottom-right-radius: 100px;
 }
@@ -259,7 +272,9 @@ h3 {
   	background-color: #181743;
   	z-index: 1;
   	border-radius: 100%;
-  	transform: translateX(-50%);
+  	-webkit-transform: translateX(-50%);
+  	    -ms-transform: translateX(-50%);
+  	        transform: translateX(-50%);
 }
 
 /**************************/
@@ -272,7 +287,9 @@ h3 {
 	left: -5%;
 	width: 500px;
 	height: 500px;
-	transform: translate(-15%, 30%);
+	-webkit-transform: translate(-15%, 30%);
+	    -ms-transform: translate(-15%, 30%);
+	        transform: translate(-15%, 30%);
 }
 
 #earth {
@@ -284,8 +301,15 @@ h3 {
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
-	transform: rotate(-8deg);
-	box-shadow: 
+	-webkit-transform: rotate(-8deg);
+	    -ms-transform: rotate(-8deg);
+	        transform: rotate(-8deg);
+	-webkit-box-shadow: 
+    inset 50px 5px rgba(110, 129, 227, 0.2), 
+    0 0 0 120px rgba(20, 106, 221, 0.1),
+    0 0 0 300px rgba(20, 106, 221, 0.1),
+    0 0 0 500px rgba(20, 106, 221, 0.1);
+	        box-shadow: 
     inset 50px 5px rgba(110, 129, 227, 0.2), 
     0 0 0 120px rgba(20, 106, 221, 0.1),
     0 0 0 300px rgba(20, 106, 221, 0.1),
@@ -349,9 +373,12 @@ h3 {
 	border-top-right-radius: 400px;
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
-	box-shadow: -15px 10px 20px rgba(110, 129, 227, 0.2);
+	-webkit-box-shadow: -15px 10px 20px rgba(110, 129, 227, 0.2);
+	        box-shadow: -15px 10px 20px rgba(110, 129, 227, 0.2);
 	z-index: 2;
-	transform: rotate(-8deg) translateX(-30%);
+	-webkit-transform: rotate(-8deg) translateX(-30%);
+	    -ms-transform: rotate(-8deg) translateX(-30%);
+	        transform: rotate(-8deg) translateX(-30%);
 }
 
 .cloud-big .cloud-big-part-1 {
@@ -409,8 +436,11 @@ h3 {
 	border-top-right-radius: 200px;
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
-	box-shadow: -15px 10px 20px rgba(110, 129, 227, 0.2);
-	transform: rotate(-8deg);
+	-webkit-box-shadow: -15px 10px 20px rgba(110, 129, 227, 0.2);
+	        box-shadow: -15px 10px 20px rgba(110, 129, 227, 0.2);
+	-webkit-transform: rotate(-8deg);
+	    -ms-transform: rotate(-8deg);
+	        transform: rotate(-8deg);
 }
 
 .cloud-small .cloud-small-part-1 {
@@ -443,7 +473,9 @@ h3 {
 	position: absolute;
 	top: -30px;
 	left: 30%;
-	transform: rotate(-12deg);
+	-webkit-transform: rotate(-12deg);
+	    -ms-transform: rotate(-12deg);
+	        transform: rotate(-12deg);
 }
 
 .telescope-arm {
@@ -455,9 +487,12 @@ h3 {
 	height: 30px;
 	border-radius: 5px;
 	top: 25px;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	background-color: crimson;
-	box-shadow: inset 0 -7px rgba(178, 34, 34, 0.5);
+	-webkit-box-shadow: inset 0 -7px rgba(178, 34, 34, 0.5);
+	        box-shadow: inset 0 -7px rgba(178, 34, 34, 0.5);
 }
 
 .telescope-arm-big {
@@ -467,7 +502,8 @@ h3 {
 	border-radius: 5px;
 	left: 45px;
 	background-color: crimson;
-	box-shadow: inset 0 -10px rgba(178, 34, 34, 0.5);
+	-webkit-box-shadow: inset 0 -10px rgba(178, 34, 34, 0.5);
+	        box-shadow: inset 0 -10px rgba(178, 34, 34, 0.5);
 }
 
 .telescope-lens-edge {
@@ -478,7 +514,8 @@ h3 {
 	left: 135px;
 	background-color: gold;
 	top: -5px;
-	box-shadow: inset 0 -7px rgba(255, 165, 0, 0.5);
+	-webkit-box-shadow: inset 0 -7px rgba(255, 165, 0, 0.5);
+	        box-shadow: inset 0 -7px rgba(255, 165, 0, 0.5);
 }
 
 .telescope-lens {
@@ -488,7 +525,8 @@ h3 {
 	border-radius: 100%;
 	background-color: cornflowerblue;
 	left: 110px;
-	box-shadow: inset 0 -10px rgba(65, 105, 255, 0.5);
+	-webkit-box-shadow: inset 0 -10px rgba(65, 105, 255, 0.5);
+	        box-shadow: inset 0 -10px rgba(65, 105, 255, 0.5);
 }
 
 .telescope-lens:after {
@@ -521,7 +559,9 @@ h3 {
 	bottom: -75px;
 	left: 88px;
 	border-radius: 3px;
-	transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	    -ms-transform: rotate(-20deg);
+	        transform: rotate(-20deg);
 }
 
 .telescope-baseleg-left {
@@ -532,7 +572,9 @@ h3 {
 	bottom: -75px;
 	left: 72px;
 	border-radius: 3px;
-	transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	    -ms-transform: rotate(20deg);
+	        transform: rotate(20deg);
 }
 
 .star-twinkle.telescope-glow {
@@ -550,10 +592,25 @@ h3 {
   	height: 100px;
   	border-radius: 100%;
   	background-color: #E8F7EE;
-  	box-shadow: inset -10px -10px rgba(0, 0, 0, 0.2);
+  	-webkit-box-shadow: inset -10px -10px rgba(0, 0, 0, 0.2);
+  	        box-shadow: inset -10px -10px rgba(0, 0, 0, 0.2);
   	right: 7%;
-  	animation: bounce 2s ease infinite;
-  	animation-delay: 0.5s;
+  	-webkit-animation: bounce 2s ease infinite;
+  	        animation: bounce 2s ease infinite;
+  	-webkit-animation-delay: 0.5s;
+  	        animation-delay: 0.5s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: -29%;
+  }
+  50% {
+    bottom: -30%;
+  }
+  100% {
+    bottom: -29%;
+  }
 }
 
 @keyframes bounce {
@@ -576,7 +633,9 @@ h3 {
 	position: absolute;
     right: -20%;
     bottom: 0;
-    transform: rotate(115deg);
+    -webkit-transform: rotate(115deg);
+        -ms-transform: rotate(115deg);
+            transform: rotate(115deg);
 }
 
 .rocket {
@@ -584,7 +643,8 @@ h3 {
 
 .rocket.blogpage {
 	position: absolute;
-	transform: scale(2) rotate(70deg);
+	-ms-transform: scale(2) rotate(70deg);
+	    transform: scale(2) rotate(70deg);
 	-webkit-transform: scale(2) rotate(70deg);
 	top: -50px;
 	left: 8%;
@@ -627,7 +687,9 @@ h3 {
 	height: 2px;
 	border-radius: 20px;
 	left: 20%;
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 	top: 48%;
 }
 
@@ -638,43 +700,101 @@ h3 {
 	height: 2px;
 	border-radius: 20px;
 	left: 20%;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	top: 40%;
+}
+
+@-webkit-keyframes flamebig-move {
+	0% {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	25% {
+		-webkit-transform: rotate(-50deg);
+		        transform: rotate(-50deg);
+	}
+	50% {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	75% {
+		-webkit-transform: rotate(-40deg);
+		        transform: rotate(-40deg);
+	}
+	100% {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
 }
 
 @keyframes flamebig-move {
 	0% {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 	25% {
-		transform: rotate(-50deg);
+		-webkit-transform: rotate(-50deg);
+		        transform: rotate(-50deg);
 	}
 	50% {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 	75% {
-		transform: rotate(-40deg);
+		-webkit-transform: rotate(-40deg);
+		        transform: rotate(-40deg);
 	}
 	100% {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+}
+
+@-webkit-keyframes flamesmall-move {
+	0% {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	25% {
+		-webkit-transform: rotate(-47deg);
+		        transform: rotate(-47deg);
+	}
+	50% {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	75% {
+		-webkit-transform: rotate(-42deg);
+		        transform: rotate(-42deg);
+	}
+	100% {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 }
 
 @keyframes flamesmall-move {
 	0% {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 	25% {
-		transform: rotate(-47deg);
+		-webkit-transform: rotate(-47deg);
+		        transform: rotate(-47deg);
 	}
 	50% {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 	75% {
-		transform: rotate(-42deg);
+		-webkit-transform: rotate(-42deg);
+		        transform: rotate(-42deg);
 	}
 	100% {
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
 	}
 }
 
@@ -687,12 +807,15 @@ h3 {
   	position: absolute;
   	left: 35px;
   	opacity: 0.5;
-  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+  	    -ms-transform: rotate(-45deg);
+  	        transform: rotate(-45deg);
 
 }
 
 .rocket-flame-big.animated {
-	animation: flamebig-move 1s ease infinite;
+	-webkit-animation: flamebig-move 1s ease infinite;
+	        animation: flamebig-move 1s ease infinite;
 }
 
 .rocket-flame-small {
@@ -704,11 +827,14 @@ h3 {
   	position: absolute;
   	left: 50px;
   	opacity: 0.5;
-  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+  	    -ms-transform: rotate(-45deg);
+  	        transform: rotate(-45deg);
 }
 
 .rocket-flame-small.animated {
-	animation: flamesmall-move 1s ease infinite;
+	-webkit-animation: flamesmall-move 1s ease infinite;
+	        animation: flamesmall-move 1s ease infinite;
 }
 
 .rocket-body {
@@ -716,10 +842,13 @@ h3 {
   	height: 150px;
   	border-radius: 75% 0%;
   	background-color: firebrick;
-  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+  	    -ms-transform: rotate(-45deg);
+  	        transform: rotate(-45deg);
   	position: absolute;
   	top: -100px;
-  	box-shadow: inset 0 -15px rgba(139, 0, 0, 0.5);
+  	-webkit-box-shadow: inset 0 -15px rgba(139, 0, 0, 0.5);
+  	        box-shadow: inset 0 -15px rgba(139, 0, 0, 0.5);
 }
 
 .rocket-top-part-left {
@@ -732,7 +861,9 @@ h3 {
 	border-left: 31px solid transparent;
 	border-bottom: 31px solid gold;
 	border-radius: 100%;
-	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	    -ms-transform: rotate(135deg);
+	        transform: rotate(135deg);
 }
 
 .rocket-top-part-right {
@@ -745,7 +876,9 @@ h3 {
 	border-left:31px solid transparent;
 	border-bottom:31px solid gold;
 	border-radius: 100%;
-	transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
+	    -ms-transform: rotate(225deg);
+	        transform: rotate(225deg);
 }
 
 .rocket-window {
@@ -757,7 +890,8 @@ h3 {
 	border: 5px solid rgb(255, 165, 0);
 	top: -70px;
 	left: 50px;
-	box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
+	        box-shadow: inset -3px -3px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 }
 
@@ -770,7 +904,9 @@ h3 {
 	border-right: 20px solid transparent;
 	border-left: 30px solid transparent;
 	border-bottom: 20px solid rgb(255, 165, 0);
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 .rocket-backwing-middle-right {
@@ -782,7 +918,9 @@ h3 {
 	border-right: 30px solid transparent;
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid gold;
-	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	    -ms-transform: rotate(270deg);
+	        transform: rotate(270deg);
 }
 
 .rocket-backwing-left {
@@ -795,7 +933,9 @@ h3 {
 	border-left: 31px solid transparent;
 	border-bottom: 31px solid gold;
 	border-radius: 70%;
-	transform: rotate(98deg);
+	-webkit-transform: rotate(98deg);
+	    -ms-transform: rotate(98deg);
+	        transform: rotate(98deg);
 }
 
 .rocket-backwing-right {
@@ -808,7 +948,9 @@ h3 {
 	border-left:31px solid transparent;
 	border-bottom:31px solid rgb(255, 165, 0);
 	border-radius: 70%;
-	transform: rotate(262deg);
+	-webkit-transform: rotate(262deg);
+	    -ms-transform: rotate(262deg);
+	        transform: rotate(262deg);
 }
 
 /***********************/
@@ -818,11 +960,26 @@ h3 {
 .astronaut {
 	position: absolute;
 	right: -15px;
-	transform: translateY(-50%) rotate(-30deg);
+	-webkit-transform: translateY(-50%) rotate(-30deg);
+	    -ms-transform: translateY(-50%) rotate(-30deg);
+	        transform: translateY(-50%) rotate(-30deg);
 	width: 30px;
 	height: 60px;
 	top: 30px;
-	animation: floating 3s ease infinite;
+	-webkit-animation: floating 3s ease infinite;
+	        animation: floating 3s ease infinite;
+}
+
+@-webkit-keyframes floating {
+	0% {
+		top: 30px;
+	}
+	50% {
+		top: 40px;
+	}
+	100% {
+		top: 30px;
+	}
 }
 
 @keyframes floating {
@@ -843,7 +1000,8 @@ h3 {
 	height: 30px;
 	border-radius: 100%;
 	background-color: whitesmoke;
-	box-shadow: inset 0 -1px rgba(209, 211, 215, 0.5);
+	-webkit-box-shadow: inset 0 -1px rgba(209, 211, 215, 0.5);
+	        box-shadow: inset 0 -1px rgba(209, 211, 215, 0.5);
 }
 
 .helmet .screen {
@@ -854,15 +1012,20 @@ h3 {
 	background-color: #C3E3E7;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: inset 0 7px rgba(161, 210, 211, 0.5);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-box-shadow: inset 0 7px rgba(161, 210, 211, 0.5);
+	        box-shadow: inset 0 7px rgba(161, 210, 211, 0.5);
 }
 
 .helmet .left-ear {
 	position: absolute;
 	left: -2px;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	width: 5px;
 	height: 10px;
 	background-color: #D1D3D7;
@@ -873,7 +1036,9 @@ h3 {
 	position: absolute;
 	right: -2px;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	width: 5px;
 	height: 10px;
 	background-color: #D1D3D7;
@@ -891,14 +1056,18 @@ h3 {
 	background-color: whitesmoke;
 	left: 50%;
 	top: 24px;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .body .left-arm {
 	position: absolute;
 	top: 8px;
 	left: -8px;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 
 .upper-arm {
@@ -922,34 +1091,44 @@ h3 {
 	height: 8px;
 	background-color: whitesmoke;
 	border-radius: 10px;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 .left-arm .forearm {
 	position: absolute;
 	top: -1px;
 	left: -4px;
-	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	        transform: rotate(30deg);
 }
 
 .right-arm .forearm {
 	position: absolute;
 	top: -1px;
 	right: -4px;
-	transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	    -ms-transform: rotate(-30deg);
+	        transform: rotate(-30deg);
 }
 
 .body .right-arm {
 	position: absolute;
 	top: 8px;
 	right: -8px;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 
 .body .right-leg {
 	position: absolute;
 	bottom: -6px;
-	transform: translateY(-50%) rotate(40deg);
+	-webkit-transform: translateY(-50%) rotate(40deg);
+	    -ms-transform: translateY(-50%) rotate(40deg);
+	        transform: translateY(-50%) rotate(40deg);
 	left: -8px;
 }
 
@@ -959,14 +1138,17 @@ h3 {
 	background-color: whitesmoke;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 .foot {
 	width: 12px;
 	height: 8px;
 	background-color: whitesmoke;
-	box-shadow: inset 0 -2px rgba(209, 211, 215, 1);
+	-webkit-box-shadow: inset 0 -2px rgba(209, 211, 215, 1);
+	        box-shadow: inset 0 -2px rgba(209, 211, 215, 1);
 }
 
 .right-leg .foot {
@@ -990,7 +1172,9 @@ h3 {
 .body .left-leg {
 	position: absolute;
 	bottom: -6px;
-	transform: translateY(-50%) rotate(-40deg);
+	-webkit-transform: translateY(-50%) rotate(-40deg);
+	    -ms-transform: translateY(-50%) rotate(-40deg);
+	        transform: translateY(-50%) rotate(-40deg);
 	right: -8px;
 }
 
@@ -1004,7 +1188,9 @@ h3 {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	top: 20px;
 }
 
@@ -1023,7 +1209,8 @@ h3 {
 	left: 0;
 	right: 0;
 	overflow: hidden;
-	animation: floating-string 3s ease infinite;
+	-webkit-animation: floating-string 3s ease infinite;
+	        animation: floating-string 3s ease infinite;
 }
 
 .string-area .string {
@@ -1036,15 +1223,33 @@ h3 {
 	left: 0;
 }
 
-@keyframes floating-string {
+@-webkit-keyframes floating-string {
 	0% {
-		transform: scaleY(-1) rotate(0deg);
+		-webkit-transform: scaleY(-1) rotate(0deg);
+		        transform: scaleY(-1) rotate(0deg);
 	}
 	50% {
-		transform: scaleY(-1) rotate(-3deg);
+		-webkit-transform: scaleY(-1) rotate(-3deg);
+		        transform: scaleY(-1) rotate(-3deg);
 	}
 	100% {
-		transform: scaleY(-1) rotate(0deg);
+		-webkit-transform: scaleY(-1) rotate(0deg);
+		        transform: scaleY(-1) rotate(0deg);
+	}
+}
+
+@keyframes floating-string {
+	0% {
+		-webkit-transform: scaleY(-1) rotate(0deg);
+		        transform: scaleY(-1) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: scaleY(-1) rotate(-3deg);
+		        transform: scaleY(-1) rotate(-3deg);
+	}
+	100% {
+		-webkit-transform: scaleY(-1) rotate(0deg);
+		        transform: scaleY(-1) rotate(0deg);
 	}
 }
 
@@ -1066,12 +1271,15 @@ h3 {
   	border-radius: 100%;
   	/*animation: twinkle-width 1s ease infinite; <-- set through javascript*/
   	top: 50%;
-  	transform: translateY(-50%);
+  	-webkit-transform: translateY(-50%);
+  	    -ms-transform: translateY(-50%);
+  	        transform: translateY(-50%);
   	background-color: whitesmoke;
 }
 
 .star-twinkle.telescope-glow div:nth-child(1) {
-	animation: twinkle-width 2s ease infinite;
+	-webkit-animation: twinkle-width 2s ease infinite;
+	        animation: twinkle-width 2s ease infinite;
 }
 
 .star-twinkle div:nth-child(2) {
@@ -1080,12 +1288,33 @@ h3 {
   	border-radius: 100%;
   	/*animation: twinkle-height 1s ease infinite; <-- set through javascript*/
   	left: 50%;
-  	transform: translateX(-50%);
+  	-webkit-transform: translateX(-50%);
+  	    -ms-transform: translateX(-50%);
+  	        transform: translateX(-50%);
   	background-color: whitesmoke;
 }
 
 .star-twinkle.telescope-glow div:nth-child(2) {
-	animation: twinkle-height 2s ease infinite;
+	-webkit-animation: twinkle-height 2s ease infinite;
+	        animation: twinkle-height 2s ease infinite;
+}
+
+@-webkit-keyframes twinkle-height {
+  0% {
+    height: 20px;
+    top: -6px;
+    opacity: 0.8;
+  }
+  50% {
+    height: 4px;
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    height: 20px;
+    top: -6px;
+    opacity: 0.8;
+  }
 }
 
 @keyframes twinkle-height {
@@ -1102,6 +1331,24 @@ h3 {
   100% {
     height: 20px;
     top: -6px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes twinkle-width {
+  0% {
+    width: 20px;
+    left: -6px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 4px;
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 20px;
+    left: -6px;
     opacity: 0.8;
   }
 }
@@ -1148,10 +1395,25 @@ h3 {
       }
       
       .astronaut {
-          transform: translateY(-50%) rotate(-30deg) scale(0.5);
-          animation: floating_mobile 3s ease infinite;
+          -webkit-transform: translateY(-50%) rotate(-30deg) scale(0.5);
+              -ms-transform: translateY(-50%) rotate(-30deg) scale(0.5);
+                  transform: translateY(-50%) rotate(-30deg) scale(0.5);
+          -webkit-animation: floating_mobile 3s ease infinite;
+                  animation: floating_mobile 3s ease infinite;
           top: 30px;
       }
+      
+      @-webkit-keyframes floating_mobile {
+		0% {
+			top: 15px;
+		}
+		50% {
+			top: 20px;
+		}
+		100% {
+			top: 15px;
+		}
+	  }
       
       @keyframes floating_mobile {
 		0% {
@@ -1166,18 +1428,37 @@ h3 {
 	  }
       
       .astronaut-area .string-area {
-      	animation: floating-string_mobile 3s ease infinite;
+      	-webkit-animation: floating-string_mobile 3s ease infinite;
+      	        animation: floating-string_mobile 3s ease infinite;
       }
+      
+      @-webkit-keyframes floating-string_mobile {
+		0% {
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
+		}
+		50% {
+			-webkit-transform: scaleY(-1) rotate(-6deg);
+			        transform: scaleY(-1) rotate(-6deg);
+		}
+		100% {
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
+		}
+	  }
       
       @keyframes floating-string_mobile {
 		0% {
-			transform: scaleY(-1) rotate(0deg);
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
 		}
 		50% {
-			transform: scaleY(-1) rotate(-6deg);
+			-webkit-transform: scaleY(-1) rotate(-6deg);
+			        transform: scaleY(-1) rotate(-6deg);
 		}
 		100% {
-			transform: scaleY(-1) rotate(0deg);
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
 		}
 	  }
       
@@ -1190,13 +1471,17 @@ h3 {
       }
       
       .earth-corner {
-          transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+              -ms-transform: scale(0.5);
+                  transform: scale(0.5);
           left: -30%;
           bottom: -120%;
       }
       
       .moon {
-          transform: scale(0.5);     
+          -webkit-transform: scale(0.5);
+              -ms-transform: scale(0.5);
+                  transform: scale(0.5);     
       }
       
       .arrow-down {
@@ -1223,7 +1508,9 @@ h3 {
       }
 
       .rocket.blogpage {
-          transform: scale(0.8) rotate(70deg);
+          -webkit-transform: scale(0.8) rotate(70deg);
+              -ms-transform: scale(0.8) rotate(70deg);
+                  transform: scale(0.8) rotate(70deg);
           top: -3%;
       }
 
@@ -1262,10 +1549,25 @@ h3 {
       }
       
       .astronaut {
-          transform: translateY(-50%) rotate(-30deg) scale(0.5);
-          animation: floating_mobile 3s ease infinite;
+          -webkit-transform: translateY(-50%) rotate(-30deg) scale(0.5);
+              -ms-transform: translateY(-50%) rotate(-30deg) scale(0.5);
+                  transform: translateY(-50%) rotate(-30deg) scale(0.5);
+          -webkit-animation: floating_mobile 3s ease infinite;
+                  animation: floating_mobile 3s ease infinite;
           top: 10px;
       }
+      
+      @-webkit-keyframes floating_mobile {
+		0% {
+			top: 10px;
+		}
+		50% {
+			top: 15px;
+		}
+		100% {
+			top: 10px;
+		}
+	  }
       
       @keyframes floating_mobile {
 		0% {
@@ -1280,18 +1582,37 @@ h3 {
 	  }
       
       .astronaut-area .string-area {
-      	animation: floating-string_mobile 3s ease infinite;
+      	-webkit-animation: floating-string_mobile 3s ease infinite;
+      	        animation: floating-string_mobile 3s ease infinite;
       }
+      
+      @-webkit-keyframes floating-string_mobile {
+		0% {
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
+		}
+		50% {
+			-webkit-transform: scaleY(-1) rotate(-9deg);
+			        transform: scaleY(-1) rotate(-9deg);
+		}
+		100% {
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
+		}
+	  }
       
       @keyframes floating-string_mobile {
 		0% {
-			transform: scaleY(-1) rotate(0deg);
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
 		}
 		50% {
-			transform: scaleY(-1) rotate(-9deg);
+			-webkit-transform: scaleY(-1) rotate(-9deg);
+			        transform: scaleY(-1) rotate(-9deg);
 		}
 		100% {
-			transform: scaleY(-1) rotate(0deg);
+			-webkit-transform: scaleY(-1) rotate(0deg);
+			        transform: scaleY(-1) rotate(0deg);
 		}
 	  }
       
@@ -1318,7 +1639,9 @@ h3 {
       }
       
       .earth-corner {
-          transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+              -ms-transform: scale(0.5);
+                  transform: scale(0.5);
           left: -55%;
           bottom: -100%;
       }
@@ -1326,7 +1649,10 @@ h3 {
       .skills-container {
           left: 20px;
           right: 20px;
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           top: 0;
       }
       
@@ -1335,7 +1661,9 @@ h3 {
       }
       
       .telescope-arm {
-          transform: rotate(-15deg);
+          -webkit-transform: rotate(-15deg);
+              -ms-transform: rotate(-15deg);
+                  transform: rotate(-15deg);
           position: relative;
           top: 15px;
       }
@@ -1344,11 +1672,15 @@ h3 {
          left: 80%;
          bottom: -20%;
          right: auto;
-         transform: rotate(140deg); 
+         -webkit-transform: rotate(140deg);
+             -ms-transform: rotate(140deg);
+                 transform: rotate(140deg); 
       }
       
       .moon {
-          transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+              -ms-transform: scale(0.5);
+                  transform: scale(0.5);
       }
       
       #timeline {
@@ -1382,7 +1714,9 @@ h3 {
       }
 
       .rocket.blogpage {
-          transform: scale(0.8) rotate(70deg);
+          -webkit-transform: scale(0.8) rotate(70deg);
+              -ms-transform: scale(0.8) rotate(70deg);
+                  transform: scale(0.8) rotate(70deg);
           top: -5%;
           left: 15%;
       }
