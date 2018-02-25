@@ -1376,7 +1376,7 @@ h3 {
 /* Landscape */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 812px)
+  and (max-device-width: 600px)
   and (orientation: landscape) {
   	
       #title {
@@ -1535,7 +1535,7 @@ h3 {
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 812px)
+  and (max-device-width: 600px)
   and (orientation: portrait) {
 
   	  #title {
