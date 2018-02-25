@@ -80,13 +80,6 @@ footer {
 	padding-bottom: 20px;
 }
 
-footer.blogpage {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
 #title {
 	position: absolute;
 	top: 35%;
