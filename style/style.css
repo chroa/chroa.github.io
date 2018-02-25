@@ -1133,13 +1133,52 @@ h3 {
   and (orientation: landscape) {
   	
       #title {
-          top: 30%;
-          left: 15%;
+          top: 25%;
+          left: 28%;
           right: 15%;
       }
       
+      .astronaut-area {
+          top: 30%;
+          left: -12%;
+      }
+      
+      .astronaut {
+          transform: translateY(-50%) rotate(-30deg) scale(0.5);
+          animation: floating_mobile 3s ease infinite;
+          top: 30px;
+      }
+      
+      @keyframes floating_mobile {
+		0% {
+			top: 15px;
+		}
+		50% {
+			top: 20px;
+		}
+		100% {
+			top: 15px;
+		}
+	  }
+      
+      .astronaut-area .string-area {
+      	animation: floating-string_mobile 3s ease infinite;
+      }
+      
+      @keyframes floating-string_mobile {
+		0% {
+			transform: scaleY(-1) rotate(0deg);
+		}
+		50% {
+			transform: scaleY(-1) rotate(-9deg);
+		}
+		100% {
+			transform: scaleY(-1) rotate(0deg);
+		}
+	  }
+      
 	  h1 {
-          font-size: 2.2em;
+          font-size: 2em;
       }
       
       h3 {
