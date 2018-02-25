@@ -134,9 +134,9 @@ h3 {
 
 #blog {
 	position: absolute;
-	top: 35%;
 	right: 15%;
 	left: 15%;
+	top: 30%;
 }
 
 .post {
@@ -1146,7 +1146,7 @@ h3 {
       }
 
       .post .date {
-		  font-size: 0.5em;
+		  font-size: 0.8em;
 	  }
 
       .astronaut-area {
@@ -1248,7 +1248,7 @@ h3 {
       }
 
       footer {
-      	font-size: 0.5em;
+      	font-size: 0.8em;
       }
 }
 
@@ -1395,7 +1395,7 @@ h3 {
       }
 
       footer {
-      	font-size: 0.5em;
+      	font-size: 0.8em;
       }
 }
 
