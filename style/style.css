@@ -1392,4 +1392,19 @@ h3 {
       }
 }
 
-/* Tablets should have no problem viewing the desktop version */
+@media only screen 
+  and (min-device-width: 812px)
+  and (orientation: portrait) {
+
+      .telescope-arm {
+          position: absolute;
+          transform: rotate(-12deg);
+          top: 10px;
+      }
+      
+      .rocket.frontpage {
+    	  right: 8%;
+      }
+ 
+}
+
